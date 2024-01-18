@@ -1,0 +1,13 @@
+@font-face {
+  font-family: 'DM Sans';
+  src: url(../fonts/DMSans_18pt-Bold.ttf);
+}
+
+.menu {
+  font-family: 'DM Sans', sans-serif;
+}
+
+.menu a {
+  color: #000;
+  text-decoration: none;
+}
