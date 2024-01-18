@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
-  faArrowLeft, faArrowRight, faPlus, faEnvelope, faPhone,
+  faArrowLeft, faArrowRight, faPlus, faEnvelope, faPhone, faMinus
 } from '@fortawesome/free-solid-svg-icons';
 import secondPage from '../assets/secondPage.svg';
 import thirdPage from '../assets/thirdPage.svg';
@@ -56,6 +56,20 @@ const Heroimg = () => {
 
   const isFirstTestimony = currentTestimonyIndex === 0;
   const isLastTestimony = currentTestimonyIndex === testimoniesData.length - 1;
+
+  const [questionOpen, setQuestionOpen] = useState ({
+    question1: false,
+    question2: false,
+    question3: false,
+    question4: false,
+  });
+
+  const toggleQuestion = (question) => {
+    setQuestionOpen((prev) => ({
+      ...prev,
+      [question]: !prev[question],
+    }));
+  };
 
   return (
     <div className="homepage">
@@ -197,24 +211,78 @@ const Heroimg = () => {
 
       <div className="questions">
         <h2>Frequently asked questions</h2>
-        <ul className="allQuestions">
-          <li className="eachQuestion">
+        <div className="each-question">
+          <h4>
             How long does a typical consulting engagement last?
-            <FontAwesomeIcon icon={faPlus} />
-          </li>
-          <li className="eachQuestion">
-            How can project management services help my company achieve its goals?
-            <FontAwesomeIcon icon={faPlus} />
-          </li>
-          <li className="eachQuestion">
-            Can your company handle projects/events of different scales and budgets?
-            <FontAwesomeIcon icon={faPlus} />
-          </li>
-          <li className="eachQuestion">
-            How do you ensure confidentiality and data security during consulting engagements?
-            <FontAwesomeIcon icon={faPlus} />
-          </li>
-        </ul>
+          </h4>
+          <FontAwesomeIcon
+          icon={questionOpen.question1 ? faMinus : faPlus }
+          onClick={() => toggleQuestion('question1')}
+          />
+          {questionOpen.question1 && 
+          <p>
+            The duration of a consulting engagement varies depending on the scope and
+            complexity of the project. It can range from a few weeks for a specific task
+            or analysis to several months for comprehensive organizational transformations.
+          </p>
+          }
+        </div>
+        <div className="each-question">
+          <h4>
+            How can project management service help my company
+            achieve its goals?
+          </h4>
+          <FontAwesomeIcon
+          icon={questionOpen.question2 ? faMinus : faPlus }
+          onClick={() => toggleQuestion('question2')}
+          />
+          {questionOpen.question2 && 
+          <p>
+            Our project management services help organizations achieve their goals by
+            providing a structured approach to planning, executing, and completing
+            projects. This ensures efficient resource allocation, timely delivery,
+            and successful implementation of initiatives, ultimately contributing
+            to overall business success.
+          </p>
+          }
+        </div>
+        <div className="each-question">
+          <h4>
+            Can your company handle projcts/events of different
+            scales and budgets?
+          </h4>
+          <FontAwesomeIcon
+          icon={questionOpen.question3 ? faMinus : faPlus }
+          onClick={() => toggleQuestion('question3')}
+          />
+          {questionOpen.question3 && 
+          <p>
+            Yes, our company is equipped to handle projects and events of various
+            scales and budgets. We tailor our services to meet the specific needs
+            of each client, whether it's a small-scale project or a large-scale event.
+            Our goal is to deliver successful outcomes within the defined budget and scope.
+          </p>
+          }
+        </div>
+        <div className="each-question">
+          <h4>
+            How do you ensure confidentiality and data security during
+            consulting engagements?
+          </h4>
+          <FontAwesomeIcon
+          icon={questionOpen.question4 ? faMinus : faPlus }
+          onClick={() => toggleQuestion('question4')}
+          />
+          {questionOpen.question4 && 
+          <p>
+            We take data security and confidentiality seriously. Our company follows
+            industry best practices and implements robust security measures to protect
+            client information. This includes restricted access, encryption, and adherence
+            to privacy standards. We prioritize the confidentiality and security of our
+            clients' data throughout the consulting engagement.
+          </p>
+          }
+        </div>
       </div>
 
       <div className="footer">
