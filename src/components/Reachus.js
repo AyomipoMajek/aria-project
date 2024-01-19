@@ -1,7 +1,7 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
-  faCheckCircle, faPlus, faMinus, faArrowRight, faEnvelope, faPhone,
+  faCheckCircle, faPlus, faMinus, faEnvelope, faPhone,
 } from '@fortawesome/free-solid-svg-icons';
 import ig from '../assets/ig.svg';
 import linkedn from '../assets/linkedn.svg';
@@ -10,8 +10,7 @@ import ariaLogo from '../assets/ariaLogo.svg';
 import './reachus.css';
 
 const Reachus = () => {
-
-  const [questionOpen, setQuestionOpen] = useState ({
+  const [questionOpen, setQuestionOpen] = useState({
     question1: false,
     question2: false,
     question3: false,
@@ -116,16 +115,17 @@ const Reachus = () => {
             How long does a typical consulting engagement last?
           </h4>
           <FontAwesomeIcon
-          icon={questionOpen.question1 ? faMinus : faPlus }
-          onClick={() => toggleQuestion('question1')}
+            icon={questionOpen.question1 ? faMinus : faPlus}
+            onClick={() => toggleQuestion('question1')}
           />
-          {questionOpen.question1 && 
+          {questionOpen.question1
+          && (
           <p>
             The duration of a consulting engagement varies depending on the scope and
             complexity of the project. It can range from a few weeks for a specific task
             or analysis to several months for comprehensive organizational transformations.
           </p>
-          }
+          )}
         </div>
         <div className="each-question">
           <h4>
@@ -133,10 +133,11 @@ const Reachus = () => {
             achieve its goals?
           </h4>
           <FontAwesomeIcon
-          icon={questionOpen.question2 ? faMinus : faPlus }
-          onClick={() => toggleQuestion('question2')}
+            icon={questionOpen.question2 ? faMinus : faPlus}
+            onClick={() => toggleQuestion('question2')}
           />
-          {questionOpen.question2 && 
+          {questionOpen.question2
+          && (
           <p>
             Our project management services help organizations achieve their goals by
             providing a structured approach to planning, executing, and completing
@@ -144,7 +145,7 @@ const Reachus = () => {
             and successful implementation of initiatives, ultimately contributing
             to overall business success.
           </p>
-          }
+          )}
         </div>
         <div className="each-question">
           <h4>
@@ -152,17 +153,18 @@ const Reachus = () => {
             scales and budgets?
           </h4>
           <FontAwesomeIcon
-          icon={questionOpen.question3 ? faMinus : faPlus }
-          onClick={() => toggleQuestion('question3')}
+            icon={questionOpen.question3 ? faMinus : faPlus}
+            onClick={() => toggleQuestion('question3')}
           />
-          {questionOpen.question3 && 
+          {questionOpen.question3
+          && (
           <p>
             Yes, our company is equipped to handle projects and events of various
             scales and budgets. We tailor our services to meet the specific needs
-            of each client, whether it's a small-scale project or a large-scale event.
+            of each client, whether it&apos;s a small-scale project or a large-scale event.
             Our goal is to deliver successful outcomes within the defined budget and scope.
           </p>
-          }
+          )}
         </div>
         <div className="each-question">
           <h4>
@@ -170,18 +172,19 @@ const Reachus = () => {
             consulting engagements?
           </h4>
           <FontAwesomeIcon
-          icon={questionOpen.question4 ? faMinus : faPlus }
-          onClick={() => toggleQuestion('question4')}
+            icon={questionOpen.question4 ? faMinus : faPlus}
+            onClick={() => toggleQuestion('question4')}
           />
-          {questionOpen.question4 && 
+          {questionOpen.question4
+          && (
           <p>
             We take data security and confidentiality seriously. Our company follows
             industry best practices and implements robust security measures to protect
             client information. This includes restricted access, encryption, and adherence
             to privacy standards. We prioritize the confidentiality and security of our
-            clients' data throughout the consulting engagement.
+            clients&apos; data throughout the consulting engagement.
           </p>
-          }
+          )}
         </div>
       </div>
 
@@ -245,7 +248,7 @@ const Reachus = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Reachus
+export default Reachus;

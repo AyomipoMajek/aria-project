@@ -3,11 +3,203 @@
   src: url(../fonts/DMSans_18pt-Bold.ttf);
 }
 
-.menu {
+.arial-logo {
+  padding: 20px;
+  width: 2.5rem;
+}
+
+.menu-icon {
+  float: right;
+  padding: 28px 20px;
+}
+
+.navbar {
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+}
+
+.navbar.active {
+  left: 0;
+  background: #fff;
+}
+
+.navmenu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  position: absolute;
+  left: -100%;
+  height: 60vh;
+  width: 100%;
+  transition: 0.3s;
+  list-style-type: none;
+  /* background: #fff; */
+}
+
+.navmenu.active {
+  left: 0;
+  list-style-type: none;
+  background: #fff;
+}
+
+/* .navmenu li {
+  padding: 0.7rem 1.2rem;
+} */
+
+.navmenu li a {
+  text-decoration: none;
+  list-style-type: none;
+  color: #000;
+  font-size: 18px;
   font-family: 'DM Sans', sans-serif;
 }
 
-.menu a {
-  color: #000;
-  text-decoration: none;
+.each {
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+.border {
+  border-bottom: solid 1px #bdb8b8;
+  padding:10px 0;
+  margin: 0 20px;
+}
+
+.get-button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 18px 5.5rem;
+  margin: 48px 18px;
+  text-align: center;
+  font-size: 15px;
+  cursor: pointer;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.rightarrow {
+  width: 15px;
+  height: 13px;
+  padding-left: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-icon {
+    display: none;
+  }
+
+  .arial-logo {
+    position: absolute;
+    top: 0;
+    left: 20px;
+    filter: brightness(0) invert(1);
+  }
+
+  .navbar {
+    height: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navmenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    top: -150px;
+    left: 90px;
+    width: 100%;
+    background: none;
+  }
+
+  .navmenu li a {
+    font-size: 12px;
+    padding-bottom: 5px;
+    padding-left: 1px;
+    padding-right: 1px;
+    color: #000;
+  }
+
+  .navmenu li a:hover {
+    border-bottom: solid 2px #000;
+  }
+
+  .each {
+    padding: 0;
+  }
+
+  .get-button {
+    background-color: transparent;
+    color: #622323;
+    border: solid 1px #c95d5d;
+    padding: 12px 1.2rem;
+    margin-left: 8rem;
+    text-align: center;
+    font-size: 12px;
+  }
+
+  .get-button:hover {
+    background-color: #dededee0;
+    color: #000;
+    border: none;
+  }
+
+  .rightarrow {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+
+  .arial-logo {
+    top: 0;
+    left: 20px;
+    width: 60px;
+    height: 60px;
+  }
+
+  .navmenu {
+    top: -200px;
+    left: 140px;
+  }
+
+  .navmenu li a {
+    font-size: 16px;
+  }
+
+  .get-button {
+    padding: 15px 1.5rem;
+    margin-left: 10rem;
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+
+  .arial-logo {
+    top: 0;
+    left: 20px;
+    width: 60px;
+    height: 60px;
+  }
+
+  .navmenu {
+    top: -290px;
+    left: 240px;
+  }
+
+  .navmenu li a {
+    font-size: 16px;
+  }
+
+  .get-button {
+    padding: 15px 1.5rem;
+    margin-left: 23rem;
+    font-size: 16px;
+  }
 }
