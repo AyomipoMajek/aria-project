@@ -22,6 +22,7 @@
 .navbar.active {
   left: 0;
   background: #fff;
+  height: 150vh;
 }
 
 .navmenu {
@@ -95,7 +96,7 @@
     position: absolute;
     top: 0;
     left: 20px;
-    filter: brightness(0) invert(1);
+    /* filter: brightness(0) invert(1); */
   }
 
   .navbar {
