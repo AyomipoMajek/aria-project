@@ -2,3 +2,13 @@
   width: 100%;
   height: 100%;
 }
+
+.firstPage {
+  background-image: url("../assets/mainHome.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.firstPage {
+  padding-top: 10rem;
+}

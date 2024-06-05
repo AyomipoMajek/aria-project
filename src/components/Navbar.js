@@ -1,132 +1,99 @@
-import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
-import ariLogo from '../assets/ariLogo.svg';
+import arialLogo from '../assets/ariaLogo.svg';
 import './navbar.css';
 
-const Navbar = ({ arialLogo }) => {
+const Navbar = () => {
   const [click, setClick] = useState(false);
-  // const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
-  // const location = useLocation();
-
-  // useEffect(() => {
-  //   const handleResize = () => {
-  //     setIsMobile(window.innerWidth < 768);
-  //   };
-  //   handleResize();
-
-  //   window.addEventListener('resize', handleResize);
-
-  //   return () => {
-  //     window.removeEventListener('resize', handleResize);
-  //   };
-  // }, []);
+  const location = useLocation();
 
   const handleClick = () => setClick(!click);
 
-  // const handleKeyDown = (e) => {
-  //   if (e.key === 'Enter') {
-  //     handleClick();
-  //   }
-  // };
+  const handleKeyDown = (e) => {
+    if (e.key === 'Enter') {
+      handleClick();
+    }
+  };
 
-  // const getIconAndItemColor = () => {
-  //   if (location.pathname === '/' || location.pathname === '/contact') {
-  //     return { color: '#fff' };
-  //   }
-  //   return { color: '#000' };
-  // };
+  const getIconAndItemColor = () => {
+    if (click) {
+      return '#000';
+    }
+    if (location.pathname === '/' || location.pathname === '/contact') {
+      return '#fff';
+    }
+    return '#000';
+  };
 
-  // const getNavMenuColor = () => (isMobile && click
-  //   ? { filter: 'brightness(1) invert(0)' }
-  //   : { color: '#fff' });
+  const getLogoFilter = () => {
+    if (click) {
+      return 'brightness(1) invert(0)';
+    }
+    if (location.pathname === '/' || location.pathname === '/contact') {
+      return 'brightness(0) invert(1)';
+    }
+    return 'brightness(1) invert(0)';
+  };
 
   return (
-    <div>
-      {click ?
-      <div>
+    <div className={`navbar ${click ? 'active' : ''}`}>
       <Link to="/">
-                <img
-                  className="arial-logo"
-                  src={arialLogo}
-                  alt="arial logo"
-                />
-              </Link>
-              <div
-                className="menu-icon"
-                role="button"
-                onClick={()=> setClick(false)}
-                onKeyDown={handleKeyDown}
-                tabIndex={0}
-              >
-                <FaTimes className="hamicon" style={getNavMenuColor()} />
-
-              </div>
-              <ul className={`navmenu ${click ? 'active' : ''}`} style={getNavMenuColor()}>
-                <li className="border" />
-                <li className="each">
-                  <Link to="/">
-                    Home
-                  </Link>
-                </li>
-                <li className="border" />
-                <li className="each">
-                  <Link to="/about">About</Link>
-                </li>
-                <li className="border" />
-                <li className="each">
-                  <Link to="/contact">Contact</Link>
-                </li>
-                <li className="border" />
-                <button className="get-button" type="button">
-                  Get in touch
-                  <FontAwesomeIcon className="rightarrow" icon={faArrowRight} />
-                </button>
-              </ul>
-      </div>      
-      <div className="theNav">
-              <Link to="/">
-                <img
-                  className="arial-logo"
-                  src={ariLogo}
-                  alt="arial logo"
-                />
-              </Link>
-              <div
-                className="menu-icon"
-                role="button"
-                onClick={() =>setClick(true)}
-                onKeyDown={handleKeyDown}
-                tabIndex={0}
-              >
-                <FaTimes className="hamicon" style={getNavMenuColor()} />
-
-              </div>
-              <ul className={`navmenu ${click ? 'active' : ''}`} style={getNavMenuColor()}>
-                <li className="border" />
-                <li className="each">
-                  <Link to="/">
-                    Home
-                  </Link>
-                </li>
-                <li className="border" />
-                <li className="each">
-                  <Link to="/about">About</Link>
-                </li>
-                <li className="border" />
-                <li className="each">
-                  <Link to="/contact">Contact</Link>
-                </li>
-                <li className="border" />
-                <button className="get-button" type="button">
-                  Get in touch
-                  <FontAwesomeIcon className="rightarrow" icon={faArrowRight} />
-                </button>
-              </ul>
+        <img
+          className="arial-logo"
+          src={arialLogo}
+          alt="arial logo"
+          style={{
+            filter: getLogoFilter(),
+          }}
+        />
+      </Link>
+      <div
+        className="menu-icon"
+        role="button"
+        onClick={handleClick}
+        onKeyDown={handleKeyDown}
+        tabIndex={0}
+        aria-label={click ? 'Close menu' : 'Open menu'}
+      >
+        {click ? (
+          <FaTimes
+            className="hamicon"
+            style={{
+              color: '#000',
+            }}
+          />
+        ) : (
+          <FaBars
+            className="hamicon"
+            style={{
+              color: getIconAndItemColor(),
+            }}
+          />
+        )}
       </div>
-  </div>
+      <ul className={`navmenu ${click ? 'active' : ''}`} style={{ color: getIconAndItemColor() }}>
+        <li className="border" />
+        <li className="each">
+          <Link to="/" style={{ color: getIconAndItemColor() }}>Home</Link>
+        </li>
+        <li className="border" />
+        <li className="each">
+          <Link to="/about" style={{ color: getIconAndItemColor() }}>About</Link>
+        </li>
+        <li className="border" />
+        <li className="each">
+          <Link to="/contact" style={{ color: getIconAndItemColor() }}>Contact</Link>
+        </li>
+        <li className="border" />
+        <button className="get-button" type="button">
+          Get in touch
+          <FontAwesomeIcon className="rightarrow" icon={faArrowRight} />
+        </button>
+      </ul>
+    </div>
   );
 };
 
