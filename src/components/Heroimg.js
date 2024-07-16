@@ -74,16 +74,19 @@ const Heroimg = () => {
   return (
     <div className="homepage">
       <div className="firstPage">
-        <h1>Empowering businesses with innovative solutions</h1>
-        <p>
-          We offer innovative approach and strategies that help businesses thrive and succeed.
-          By leveraging our expertise, knowledge, and cutting-edge solutions,
-          Arla assists businesses in achieveing their goals.
-        </p>
-        <button type="button">
-          Get in touch
-          <FontAwesomeIcon icon={faArrowRight} />
-        </button>
+        <div className="gradient-overlay" />
+        <div className="content">
+          <h1>Empowering businesses with innovative solutions</h1>
+          <p>
+            We offer innovative approach and strategies that help businesses thrive and succeed.
+            By leveraging our expertise, knowledge, and cutting-edge solutions,
+            Arla assists businesses in achieveing their goals.
+          </p>
+          <button type="button">
+            Get in touch
+            <FontAwesomeIcon className="arrowIcon" icon={faArrowRight} />
+          </button>
+        </div>
       </div>
 
       <div className="secondPage">
@@ -148,18 +151,20 @@ const Heroimg = () => {
       <div className="testimonies">
         <img src={forWhat} alt="backgroundimg" className="whatbg" />
         <h1>What our clients say</h1>
-        <p>
+        <p className="testimonies-p">
           Discover the undeniable affirmation of our esteemed clients who attest to the
           exceptional experience of working with Aria on their projects.
         </p>
         <div className="testimony">
-          <div className="each testimony">
+          <div className="each-testimony">
             <div className="person">
               <img src={currentTestimony.logo} alt="company logo" />
-              <h3>{currentTestimony.person}</h3>
-              <p>{currentTestimony.title}</p>
+              <div className="personInfo">
+                <h3>{currentTestimony.person}</h3>
+                <p>{currentTestimony.title}</p>
+              </div>
             </div>
-            <p>{currentTestimony.quote}</p>
+            <p className="each-quote">{currentTestimony.quote}</p>
           </div>
         </div>
 
@@ -187,14 +192,14 @@ const Heroimg = () => {
 
       <div className="discover">
         <div className="discoverUs">
-          <h1>Discover effective resolutions to your challenges alongside Aria.</h1>
+          <h3>Discover effective resolutions to your challenges alongside Aria.</h3>
           <p>
             Make a smart move towards your objectives by engaging our services to
             create impactful and innovative solutions for your projects.
           </p>
           <button type="button">
             Get in touch
-            <FontAwesomeIcon icon={faArrowRight} />
+            <FontAwesomeIcon className="arrowIcon" icon={faArrowRight} />
           </button>
         </div>
 

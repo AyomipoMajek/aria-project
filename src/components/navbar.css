@@ -15,8 +15,9 @@
 
 .navbar {
   position: fixed;
-  height: 100vh;
+  /* height: 100vh; */
   width: 100%;
+  z-index: 2;
 }
 
 .navbar.active {
@@ -136,8 +137,8 @@
 
   .get-button {
     background-color: transparent;
-    color: #622323;
-    border: solid 1px #c95d5d;
+    color: #fff;
+    border: solid 1px #fff;
     padding: 12px 1.2rem;
     margin-left: 8rem;
     text-align: center;
