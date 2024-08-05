@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
-  faArrowLeft, faArrowRight, faPlus, faEnvelope, faPhone, faMinus,
+  faArrowLeft, faArrowRight, faPlus, faMinus,
 } from '@fortawesome/free-solid-svg-icons';
 import secondPage from '../assets/secondPage.svg';
 import thirdPage from '../assets/thirdPage.svg';
@@ -12,10 +12,6 @@ import logoThree from '../assets/logoThree.svg';
 import atlanticLogo from '../assets/atlanticLogo.svg';
 import beedazzleLogo from '../assets/beedazzleLogo.svg';
 import bricksLogo from '../assets/bricksLogo.svg';
-import ariaLogo from '../assets/ariaLogo.svg';
-import ig from '../assets/ig.svg';
-import linkedn from '../assets/linkedn.svg';
-import tweet from '../assets/tweet.svg';
 import forWhat from '../assets/forWhat.svg';
 import './heroimg.css';
 
@@ -217,13 +213,15 @@ const Heroimg = () => {
       <div className="questions">
         <h2>Frequently asked questions</h2>
         <div className="each-question">
-          <h4>
-            How long does a typical consulting engagement last?
-          </h4>
-          <FontAwesomeIcon
-            icon={questionOpen.question1 ? faMinus : faPlus}
-            onClick={() => toggleQuestion('question1')}
-          />
+          <div className="main-question">
+            <h4>
+              How long does a typical consulting engagement last?
+            </h4>
+            <FontAwesomeIcon
+              icon={questionOpen.question1 ? faMinus : faPlus}
+              onClick={() => toggleQuestion('question1')}
+            />
+          </div>
           {questionOpen.question1
           && (
           <p>
@@ -234,14 +232,16 @@ const Heroimg = () => {
           )}
         </div>
         <div className="each-question">
-          <h4>
-            How can project management service help my company
-            achieve its goals?
-          </h4>
-          <FontAwesomeIcon
-            icon={questionOpen.question2 ? faMinus : faPlus}
-            onClick={() => toggleQuestion('question2')}
-          />
+          <div className="main-question">
+            <h4>
+              How can project management service help my company
+              achieve its goals?
+            </h4>
+            <FontAwesomeIcon
+              icon={questionOpen.question2 ? faMinus : faPlus}
+              onClick={() => toggleQuestion('question2')}
+            />
+          </div>
           {questionOpen.question2
           && (
           <p>
@@ -254,14 +254,16 @@ const Heroimg = () => {
           )}
         </div>
         <div className="each-question">
-          <h4>
-            Can your company handle projcts/events of different
-            scales and budgets?
-          </h4>
-          <FontAwesomeIcon
-            icon={questionOpen.question3 ? faMinus : faPlus}
-            onClick={() => toggleQuestion('question3')}
-          />
+          <div className="main-question">
+            <h4>
+              Can your company handle projcts/events of different
+              scales and budgets?
+            </h4>
+            <FontAwesomeIcon
+              icon={questionOpen.question3 ? faMinus : faPlus}
+              onClick={() => toggleQuestion('question3')}
+            />
+          </div>
           {questionOpen.question3
           && (
           <p>
@@ -273,14 +275,16 @@ const Heroimg = () => {
           )}
         </div>
         <div className="each-question">
-          <h4>
-            How do you ensure confidentiality and data security during
-            consulting engagements?
-          </h4>
-          <FontAwesomeIcon
-            icon={questionOpen.question4 ? faMinus : faPlus}
-            onClick={() => toggleQuestion('question4')}
-          />
+          <div className="main-question">
+            <h4>
+              How do you ensure confidentiality and data security during
+              consulting engagements?
+            </h4>
+            <FontAwesomeIcon
+              icon={questionOpen.question4 ? faMinus : faPlus}
+              onClick={() => toggleQuestion('question4')}
+            />
+          </div>
           {questionOpen.question4
           && (
           <p>
@@ -291,66 +295,6 @@ const Heroimg = () => {
             clients&apos; data throughout the consulting engagement.
           </p>
           )}
-        </div>
-      </div>
-
-      <div className="footer">
-        <div className="footerTop" />
-        <img src={ariaLogo} alt="aria logo" />
-        <p>Stay ahead of the curve with Aria&apos;s creative approaches.</p>
-
-        <div className="footerMid">
-          <h4>What we do</h4>
-          <ul className="offers">
-            <li>Project Management</li>
-            <li>Event Planning</li>
-            <li>Business Consulting</li>
-          </ul>
-        </div>
-
-        <div className="footerContact">
-          <h4>Contact Us</h4>
-          <ul className="contact">
-            <li>
-              <FontAwesomeIcon icon={faEnvelope} />
-              hello@ariaprojectsltd.com
-            </li>
-            <li>
-              <FontAwesomeIcon icon={faPhone} />
-              +234 (0)8102691145
-            </li>
-            <li>
-              <FontAwesomeIcon icon={faPhone} />
-              +1(801) 428-9257
-            </li>
-            <li>
-              <FontAwesomeIcon icon={faPhone} />
-              +44 (0) 7823466355
-            </li>
-          </ul>
-        </div>
-
-        <div className="footerBottom">
-          <h4>Support</h4>
-          <ul className="support">
-            <li>FAQ</li>
-            <li>Get in touch</li>
-          </ul>
-        </div>
-
-        <div className="socials">
-          <h4>Social media</h4>
-          <ul className="socialMedia">
-            <li>
-              <img src={ig} alt="ig logo" />
-            </li>
-            <li>
-              <img src={linkedn} alt="linkedn logo" />
-            </li>
-            <li>
-              <img src={tweet} alt="tweet logo" />
-            </li>
-          </ul>
         </div>
       </div>
     </div>

@@ -1,0 +1,95 @@
+.footer {
+  padding: 20px;
+  margin-top: 4rem;
+  color: #000;
+}
+
+.footer-arial-logo {
+  width: 60px;
+  height: 56px;
+  padding-bottom: 10px;
+}
+
+.footer p {
+  font-size: 16px;
+}
+
+.footerMid {
+  margin-top: 20px;
+}
+
+.footerMid h4 {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.offers {
+  list-style: none;
+  font-size: 14px;
+}
+
+.offers li {
+  padding-top: 10px;
+}
+
+.footerContact {
+  margin-top: 20px;
+}
+
+.footerContact h4 {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.contact {
+  list-style: none;
+  font-size: 14px;
+}
+
+.contact li {
+  padding-top: 10px;
+}
+
+.contact-icon {
+  padding-right: 5px;
+}
+
+.footerBottom {
+  margin-top: 20px;
+}
+
+.footerBottom h4 {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.support {
+  list-style: none;
+  font-size: 14px;
+}
+
+.support li {
+  padding-top: 10px;
+}
+
+.socials {
+  margin-top: 20px;
+}
+
+.socials h4 {
+  font-size: 14px;
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+
+.socialMedia {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.socialMedia li {
+  padding-right: 15px;
+  width: 24px;
+  height: 24px;
+}

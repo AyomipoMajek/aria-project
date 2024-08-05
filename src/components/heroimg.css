@@ -307,5 +307,24 @@
 }
 
 .each-question {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 10px;
+}
 
+.main-question {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.each-question h4 {
+  font-size: 16px;
+  padding-right: 5px;
+}
+
+.each-question p {
+  font-size: 16px;
+  padding-top: 15px;
 }
