@@ -1,0 +1,115 @@
+.ourstory {
+  padding-top: 8rem;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.ourstory p {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.who h3 {
+  font-size: 14px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  color: #808080;
+}
+
+.who h1 {
+  font-size: 22px;
+  padding-bottom: 15px;
+}
+
+/* .who p {
+  font-size: 16px;
+  line-height: 24px;
+} */
+
+.who-image {
+  padding: 1.5rem 0;
+  width: 100%;
+  height: 100%;
+}
+
+.mission h2 {
+  font-size: 18px;
+  padding-bottom: 15px;
+}
+
+.mission-image {
+  padding: 1.5rem 0;
+  width: 100%;
+  height: 100%;
+}
+
+.coreValues {
+  margin-top: 3rem;
+  background: #FAFAFA;
+}
+
+.coreValues h1 {
+  font-size: 22px;
+  padding: 15px 0;
+  text-align: center;
+}
+
+.each-value {
+  box-sizing: border-box;
+  background-color: #fff;
+  border-radius: 5px;
+  margin: 25px 5px;
+  padding: 20px;
+}
+
+.imgh3 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.imgh3 h3 {
+  padding-left: 15px;
+  font-size: 18px;
+}
+
+.discoverUs2 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: #fff;
+  background-color: #000;
+  padding-bottom: 20px;
+  /* justify-content: center;
+  align-items: center; */
+}
+
+.discoverUs2 h3 {
+  font-size: 22px;
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.discoverUs2 p {
+  font-size: 16px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.discoverUs2 button {
+  background-color: #fff;
+  color: #000;
+  padding: 15px 25px;
+  border: none;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  margin: 20px 80px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.arrowIcon {
+  padding-left: 5px;
+}

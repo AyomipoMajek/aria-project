@@ -6,6 +6,7 @@ import {
 import whoweare from '../assets/whoweare.svg';
 import mission from '../assets/mission.svg';
 import valuesLogo from '../assets/valuesLogo.svg';
+import './ourstory.css';
 
 const Ourstory = () => (
   <div className="ourstory">
@@ -20,7 +21,7 @@ const Ourstory = () => (
           and commitment to excellence, we are here to provide solutions to make your project a
           resounding success
         </p>
-        <img src={whoweare} alt="whoweare" />
+        <img src={whoweare} alt="whoweare" className="who-image" />
       </div>
 
       <div className="mission">
@@ -30,7 +31,7 @@ const Ourstory = () => (
           improvements by providing xceptional project management, event planning,
           and business consulting services.
         </p>
-        <img src={mission} alt="lady on laptop" />
+        <img src={mission} alt="lady on laptop" className="mission-image" />
         <p>
           Ultimately, our goal is to provide comprehensive and seamless experience
           for our clients, empowering businesses to reach their full potential and
@@ -41,7 +42,7 @@ const Ourstory = () => (
 
     <div className="coreValues">
       <h1>Our core values</h1>
-      <div className="accountability">
+      <div className="each-value">
         <div className="imgh3">
           <img src={valuesLogo} alt="valuesLogo" />
           <h3>Accountability</h3>
@@ -52,7 +53,7 @@ const Ourstory = () => (
           the necessary steps to rectify them.
         </p>
       </div>
-      <div className="integrity">
+      <div className="each-value">
         <div className="imgh3">
           <img src={valuesLogo} alt="valuesLogo" />
           <h3>Integrity</h3>
@@ -63,7 +64,7 @@ const Ourstory = () => (
           with fairness, respect, and trust.
         </p>
       </div>
-      <div className="transparency">
+      <div className="each-value">
         <div className="imgh3">
           <img src={valuesLogo} alt="valuesLogo" />
           <h3>Transparency</h3>
@@ -77,15 +78,15 @@ const Ourstory = () => (
     </div>
 
     <div className="discover">
-      <div className="discoverUs">
-        <h1>Discover effective resolutions to your challenges alongside Aria.</h1>
+      <div className="discoverUs2">
+        <h3>Discover effective resolutions to your challenges alongside Aria.</h3>
         <p>
           Make a smart move towards your objectives by engaging our services to
           create impactful and innovative solutions for your projects.
         </p>
         <button type="button">
           Get in touch
-          <FontAwesomeIcon icon={faArrowRight} />
+          <FontAwesomeIcon className="arrowIcon" icon={faArrowRight} />
         </button>
       </div>
     </div>
