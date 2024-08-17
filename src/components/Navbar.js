@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -8,6 +8,7 @@ import './navbar.css';
 
 const Navbar = () => {
   const [click, setClick] = useState(false);
+  const [scrollNav, setScrollNav] = useState(false);
   const location = useLocation();
 
   const handleClick = () => setClick(!click);
@@ -17,6 +18,19 @@ const Navbar = () => {
       handleClick();
     }
   };
+
+  const changeNavBackground = () => {
+    if (window.scrollY >= 80) {
+      setScrollNav(true);
+    } else {
+      setScrollNav(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', changeNavBackground);
+    return () => window.removeEventListener('scroll', changeNavBackground);
+  }, []);
 
   const getIconAndItemColor = () => {
     if (click) {
@@ -39,7 +53,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className={`navbar ${click ? 'active' : ''}`}>
+    <div className={`navbar ${click ? 'active' : ''} ${scrollNav ? 'scroll' : ''}`}>
       <Link to="/">
         <img
           className="arial-logo"
