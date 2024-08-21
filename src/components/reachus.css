@@ -11,6 +11,24 @@
   overflow: hidden;
 }
 
+.gradient-overlay2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background:  rgba(0, 0, 0, 0.45) ;
+  z-index: 1;
+  pointer-events: none;
+  overflow: hidden;
+  height: 100%;
+}
+
+.content2 {
+  position: relative;
+  z-index: 1;
+}
+
 .intro h1 {
   font-size: 23px;
   padding-bottom: 15px;

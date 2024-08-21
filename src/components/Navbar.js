@@ -91,18 +91,18 @@ const Navbar = () => {
       <ul className={`navmenu ${click ? 'active' : ''}`} style={{ color: getIconAndItemColor() }}>
         <li className="border" />
         <li className="each">
-          <Link to="/" style={{ color: getIconAndItemColor() }}>Home</Link>
+          <Link to="/" style={{ color: getIconAndItemColor(), borderColor: getIconAndItemColor() }}>Home</Link>
         </li>
         <li className="border" />
         <li className="each">
-          <Link to="/about" style={{ color: getIconAndItemColor() }}>About</Link>
+          <Link to="/about" style={{ color: getIconAndItemColor(), borderColor: getIconAndItemColor() }}>About</Link>
         </li>
         <li className="border" />
         <li className="each">
-          <Link to="/contact" style={{ color: getIconAndItemColor() }}>Contact</Link>
+          <Link to="/contact" style={{ color: getIconAndItemColor(), borderColor: getIconAndItemColor() }}>Contact</Link>
         </li>
         <li className="border" />
-        <button className="get-button" type="button">
+        <button className="get-button" type="button" style={{ color: getIconAndItemColor(), borderColor: getIconAndItemColor() }}>
           Get in touch
           <FontAwesomeIcon className="rightarrow" icon={faArrowRight} />
         </button>

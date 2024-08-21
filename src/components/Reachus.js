@@ -26,21 +26,24 @@ const Reachus = () => {
   return (
     <div className="reachus">
       <div className="intro">
-        <h1>Let&apos;s work together !</h1>
-        <p>
-          Our dedicated team is ready to assist you with any inquiries,
-          questions, or requests you may habe. Whether you are seeking
-          information about our services, want to discuss a potential
-          project, or simply have a general query, we are here to help.
-        </p>
-        <div className="check">
-          <div className="each-check">
-            <FontAwesomeIcon icon={faCheckCircle} style={{ color: '#ffffff' }} className="checkIcon" />
-            Contact us
-          </div>
-          <div className="each-check">
-            <FontAwesomeIcon icon={faCheckCircle} style={{ color: '#ffffff' }} className="checkIcon" />
-            Great service
+        <div className="gradient-overlay2" />
+        <div className="content2">
+          <h1>Let&apos;s work together !</h1>
+          <p>
+            Our dedicated team is ready to assist you with any inquiries,
+            questions, or requests you may habe. Whether you are seeking
+            information about our services, want to discuss a potential
+            project, or simply have a general query, we are here to help.
+          </p>
+          <div className="check">
+            <div className="each-check">
+              <FontAwesomeIcon icon={faCheckCircle} style={{ color: '#ffffff' }} className="checkIcon" />
+              Contact us
+            </div>
+            <div className="each-check">
+              <FontAwesomeIcon icon={faCheckCircle} style={{ color: '#ffffff' }} className="checkIcon" />
+              Great service
+            </div>
           </div>
         </div>
       </div>

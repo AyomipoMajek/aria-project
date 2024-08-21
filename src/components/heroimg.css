@@ -6,7 +6,7 @@
 
 .firstPage {
   position: relative;
-  background-image: url("../assets/mainHome.jpg");
+  background-image: url("../assets/mainHome.jpeg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -327,4 +327,249 @@
 .each-question p {
   font-size: 16px;
   padding-top: 15px;
+}
+
+@media screen and (min-width: 768px) {
+
+  .firstPage {
+    height: 45vh;
+  }
+
+  .gradient-overlay {
+    background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2));
+  }
+
+  .content {
+    padding: 4rem 3.5rem;
+    width: 40%;
+  }
+
+  .firstPage h1 {
+    font-size: 48px;
+    line-height: 56px;
+  }
+
+  .firstPage p {
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .firstPage button {
+    font-size: 18px;
+    padding: 20px 30px;
+  }
+
+  .secondPage {
+    padding: 0 3.5rem;
+  }
+
+  .secondPageTopic {
+    text-align: center;
+    padding: 0 17rem;
+  }
+
+  .secondPageTopic h2 {
+    padding-top: 3rem;
+    font-size: 40px;
+  }
+
+  .secondPageTopic p {
+    font-size: 18px;
+    line-height: 25px;
+    padding-bottom: 3rem;
+  }
+
+  .secondPageCard {
+    padding: 2rem 10px;
+    display: flex;
+    align-items: center;
+    /* justify-content: flex-start; */
+    gap: 6rem;
+  }
+
+  .secondPageCard img {
+    max-width: 40%;
+    height: 18rem;
+  }
+
+  .secondPageCard h3 {
+    font-size: 16px;
+  }
+
+  .secondPageCard h2 {
+    font-size: 32px;
+  }
+
+  .secondPageCard p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .thirdPage {
+    padding: 2rem 3.5rem;
+  }
+
+  .thirdPageCard {
+    padding: 2rem 10px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    /* justify-content: flex-start; */
+    gap: 6rem;
+  }
+
+  .thirdPageCard img {
+    max-width: 40%;
+    height: 18rem;
+  }
+
+  .thirdPageCard h3 {
+    font-size: 16px;
+  }
+
+  .thirdPageCard h2 {
+    font-size: 32px;
+  }
+
+  .thirdPageCard p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .fourthPage {
+    padding: 0 3.5rem;
+    padding-bottom: 2rem;
+  }
+
+  .fourthPageCard {
+    padding: 2rem 10px;
+    display: flex;
+    align-items: center;
+    /* justify-content: flex-start; */
+    gap: 6rem;
+  }
+
+  .fourthPageCard img {
+    max-width: 40%;
+    height: 18rem;
+  }
+
+  .fourthPageCard h3 {
+    font-size: 16px;
+  }
+
+  .fourthPageCard h2 {
+    font-size: 32px;
+  }
+
+  .fourthPageCard p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  /* .testimony {
+    padding: 3rem 3.5rem;
+  } */
+
+  .testimonies h1 {
+    font-size: 40px;
+    padding-top: 5rem;
+    padding-left: 3.5rem;
+  }
+
+  .testimonies-p {
+    font-size: 16px;
+    line-height: 24px;
+    width: 40%;
+    padding-bottom: 2rem;
+    padding-left: 3.5rem;
+  }
+
+  .testimonies img {
+  width: 10rem;
+  height: 10rem;
+  }
+
+  .prevNext {
+    display: none;
+  }
+
+  .testimony {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 0 3.5rem;
+    padding-bottom: 2rem;
+  }
+
+  .testimony img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .each-testimony {
+    flex-basis: calc(33.333% - 2rem);
+    max-width: calc(33.333% - 2rem);
+    margin-bottom: 2rem;
+  }
+
+  .discover {
+    padding: 2rem 3.5rem;
+  }
+
+  .discoverUs {
+    padding: 2rem 3.5rem;
+    border-radius: 20px;
+    margin-bottom: 2rem;
+
+  }
+
+  .discoverUs h3 {
+    font-size: 40px;
+    line-height: 48px;
+    padding: 1rem 18rem;
+  }
+
+  .discoverUs p {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 1rem 21rem;
+  }
+
+  .discoverUs button {
+    font-size: 16px;
+    padding: 1rem 2rem;
+    margin-left: 32rem;
+    margin-right: 32rem;
+  }
+
+  .brands {
+    padding: 2rem 3.5rem;
+  }
+
+  .brands h2 {
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  .brands p {
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .brands img {
+    width: 12.5rem;
+    height: 8rem;
+  }
+
+  .questions {
+    padding: 2rem 3.5rem;
+    text-align: center;
+  }
+
+  .questions h2 {
+    font-size: 40px;
+    /* line-height: 48px; */
+  }
+
 }

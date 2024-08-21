@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faArrowLeft, faArrowRight, faPlus, faMinus,
@@ -17,18 +17,21 @@ import './heroimg.css';
 
 const testimoniesData = [
   {
+    id: 1,
     person: 'Humphrey O.',
     title: 'Managing Director, Atlantic Marine oilfield & oilfield services Ltd',
     quote: '"Thank you for handling this upgrade exceptionally. Your professionalism, and efficiency really exceeded our expectations. Looking forward to future collaborations."',
     logo: logoOne,
   },
   {
+    id: 2,
     person: 'Ugonna C.',
     title: 'CEO, Beedarzle Nigeria',
     quote: '"I want to say a huge thank you for rocking our launch! You guys seriously nailed it with the venue selection and top-notch execution. Our team and guests were blown away by the incredible experience. Thanks for not letting me down. You guys are absolute rockstars!"',
     logo: logoTwo,
   },
   {
+    id: 3,
     person: 'Kingsley U.',
     title: 'Creative Director, Brick and brains property ltd',
     quote: '"I want to personally thank you for the outstanding job you did with our human resource department. Your recommendations and strategies have signficantly improved our organizational structure and efficiency. I am truly impressed. Do keep up the good work."',
@@ -38,6 +41,13 @@ const testimoniesData = [
 
 const Heroimg = () => {
   const [currentTestimonyIndex, setCurrentTestimonyIndex] = useState(0);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => setWindowWidth(window.innerWidth);
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   const handleNextTestimony = () => {
     setCurrentTestimonyIndex((prevIndex) => (prevIndex + 1) % testimoniesData.length);
@@ -65,6 +75,13 @@ const Heroimg = () => {
       ...prev,
       [question]: !prev[question],
     }));
+  };
+
+  const testimoniesToDisplay = () => {
+    if (windowWidth >= 768) {
+      return testimoniesData.slice(currentTestimonyIndex, currentTestimonyIndex + 3);
+    }
+    return [currentTestimony];
   };
 
   return (
@@ -99,49 +116,59 @@ const Heroimg = () => {
 
         <div className="secondPageCard">
           <img src={secondPage} alt="lady with laptop" />
-          <h3>PROJECT MANAGEMENT</h3>
-          <h2>
-            Execute your projects seamlessly with Aria
-          </h2>
-          <p>
-            Our project management expertise ensures that all your initiatives
-            are executed efficiently and effectively. We take charge of
-            orchestrating resources and tasks, setting clear objectives, defining
-            timelines, and monitoring progress. By applying proven project
-            management methodologies, we ensure that your projects ar delivered on time
-            and within budget, while meeting your desired outcomes.
-          </p>
+          <div className="secondPageContent">
+            <h3>PROJECT MANAGEMENT</h3>
+            <h2>
+              Execute your projects seamlessly with Aria
+            </h2>
+            <p>
+              Our project management expertise ensures that all your initiatives
+              are executed efficiently and effectively. We take charge of
+              orchestrating resources and tasks, setting clear objectives, defining
+              timelines, and monitoring progress. By applying proven project
+              management methodologies, we ensure that your projects ar delivered on time
+              and within budget, while meeting your desired outcomes.
+            </p>
+          </div>
         </div>
       </div>
 
       <div className="thirdPage">
-        <img src={thirdPage} alt="wine glasses cheers" />
-        <h3>EVENT PLANNING</h3>
-        <h2>
-          Elevate your events with impeccable precisions.
-        </h2>
-        <p>
-          When it comes to corporate gatherings, we take pride in out exceptional
-          event planning services. Our team will meticulously plan and execute every
-          aspect of your event, whether it be a corporate conference, gala dinner, or
-          product launch. From venue selection and logistics to program design and vendor
-          coordination, we take care of every detail to create an unforgettable experience for
-          your guests.
-        </p>
+        <div className="thirdPageCard">
+          <img src={thirdPage} alt="wine glasses cheers" />
+          <div className="thirdPageContent">
+            <h3>EVENT PLANNING</h3>
+            <h2>
+              Elevate your events with impeccable precisions.
+            </h2>
+            <p>
+              When it comes to corporate gatherings, we take pride in out exceptional
+              event planning services. Our team will meticulously plan and execute every
+              aspect of your event, whether it be a corporate conference, gala dinner, or
+              product launch. From venue selection and logistics to program design and vendor
+              coordination, we take care of every detail to create an unforgettable experience for
+              your guests.
+            </p>
+          </div>
+        </div>
       </div>
 
       <div className="fourthPage">
-        <img src={fourthPage} alt="group of people with a laptop" />
-        <h3>BUSINESS CONSULTING</h3>
-        <h2>Optimize your business potential with expert consulting services.</h2>
-        <p>
-          Our consultants are skilled in problem-solving and can identify opportunities
-          for improvement, whether it&apos;s streamlining processes, optimizing operations,
-          or enhancing organizational performance. We analyze data, construct thorough
-          assessments and offer strategic recommendations to help you make informed decisions.
-          We work closely with you to understand your unique challenges and develop tailored
-          solutions to drive growth and success.
-        </p>
+        <div className="fourthPageCard">
+          <img src={fourthPage} alt="group of people with a laptop" />
+          <div className="fourthPageContent">
+            <h3>BUSINESS CONSULTING</h3>
+            <h2>Optimize your business potential with expert consulting services.</h2>
+            <p>
+              Our consultants are skilled in problem-solving and can identify opportunities
+              for improvement, whether it&apos;s streamlining processes, optimizing operations,
+              or enhancing organizational performance. We analyze data, construct thorough
+              assessments and offer strategic recommendations to help you make informed decisions.
+              We work closely with you to understand your unique challenges and develop tailored
+              solutions to drive growth and success.
+            </p>
+          </div>
+        </div>
       </div>
 
       <div className="testimonies">
@@ -152,16 +179,18 @@ const Heroimg = () => {
           exceptional experience of working with Aria on their projects.
         </p>
         <div className="testimony">
-          <div className="each-testimony">
-            <div className="person">
-              <img src={currentTestimony.logo} alt="company logo" />
-              <div className="personInfo">
-                <h3>{currentTestimony.person}</h3>
-                <p>{currentTestimony.title}</p>
+          {testimoniesToDisplay().map((currentTestimony) => (
+            <div className="each-testimony" key={currentTestimony.id}>
+              <div className="person">
+                <img src={currentTestimony.logo} alt="company logo" />
+                <div className="personInfo">
+                  <h3>{currentTestimony.person}</h3>
+                  <p>{currentTestimony.title}</p>
+                </div>
               </div>
+              <p className="each-quote">{currentTestimony.quote}</p>
             </div>
-            <p className="each-quote">{currentTestimony.quote}</p>
-          </div>
+          ))}
         </div>
 
         <div className="prevNext">
