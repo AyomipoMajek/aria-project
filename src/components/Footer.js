@@ -12,9 +12,10 @@ import './footer.css';
 const Footer = () => (
   <div className="footer">
     <div className="footerTop" />
-    <img className="footer-arial-logo" src={ariaLogo} alt="aria logo" />
-    <p>Stay ahead of the curve with Aria&apos;s creative approaches.</p>
-
+    <div className="logoP">
+      <img className="footer-arial-logo" src={ariaLogo} alt="aria logo" />
+      <p>Stay ahead of the curve with Aria&apos;s creative approaches.</p>
+    </div>
     <div className="footerMid">
       <h4>What we do</h4>
       <ul className="offers">

@@ -152,35 +152,35 @@
   padding-right: 10px;
 }
 
-.questions {
+.questions2 {
   margin-top: 2rem;
   padding: 10px;
 }
 
-.questions h2 {
+.questions2 h2 {
   font-size: 22px;
   padding-bottom: 15px;
 }
 
-.each-question {
+.each-question2 {
   background-color: #f9f9f9;
   padding: 20px;
   border-radius: 10px;
   margin: 10px;
 }
 
-.main-question {
+.main-question2 {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
-.each-question h4 {
+.each-question2 h4 {
   font-size: 16px;
   padding-right: 5px;
 }
 
-.each-question p {
+.each-question2 p {
   font-size: 16px;
   padding-top: 15px;
 }

@@ -110,10 +110,10 @@ const Reachus = () => {
         </div>
       </div>
 
-      <div className="questions">
+      <div className="questions2">
         <h2>Frequently asked questions</h2>
-        <div className="each-question">
-          <div className="main-question">
+        <div className="each-question2">
+          <div className="main-question2">
             <h4>
               How long does a typical consulting engagement last?
             </h4>
@@ -131,8 +131,8 @@ const Reachus = () => {
           </p>
           )}
         </div>
-        <div className="each-question">
-          <div className="main-question">
+        <div className="each-question2">
+          <div className="main-question2">
             <h4>
               How can project management service help my company
               achieve its goals?
@@ -153,8 +153,8 @@ const Reachus = () => {
           </p>
           )}
         </div>
-        <div className="each-question">
-          <div className="main-question">
+        <div className="each-question2">
+          <div className="main-question2">
             <h4>
               Can your company handle projcts/events of different
               scales and budgets?
@@ -174,8 +174,8 @@ const Reachus = () => {
           </p>
           )}
         </div>
-        <div className="each-question">
-          <div className="main-question">
+        <div className="each-question2">
+          <div className="main-question2">
             <h4>
               How do you ensure confidentiality and data security during
               consulting engagements?
