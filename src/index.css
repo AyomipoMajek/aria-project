@@ -1,0 +1,28 @@
+@font-face {
+  font-family: 'DM Sans';
+  src: url(./fonts/DMSans_18pt-Bold.ttf);
+}
+
+@font-face {
+  font-family: 'Futura Lt BT';
+  src: url(./fonts/DMSans_18pt-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Futura Lt BT';
+  src: url(./fonts/FUTURAL.TTF);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Futura Lt BT', sans-serif;
+  background-color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'DM Sans', sans-serif;
+}

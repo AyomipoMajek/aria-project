@@ -1,0 +1,187 @@
+.intro {
+  position: relative;
+  background-image: url("../assets/contact-background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  padding-top: 7rem;
+  color: #fff;
+  overflow: hidden;
+}
+
+.gradient-overlay2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background:  rgba(0, 0, 0, 0.45) ;
+  z-index: 1;
+  pointer-events: none;
+  overflow: hidden;
+  height: 100%;
+}
+
+.content2 {
+  position: relative;
+  z-index: 1;
+}
+
+.intro h1 {
+  font-size: 23px;
+  padding-bottom: 15px;
+  padding-left: 10px;
+}
+
+.intro p {
+  font-size: 16px;
+  padding-left: 10px;
+  line-height: 24px;
+  padding-bottom: 0.6rem;
+}
+
+.check {
+  display: flex;
+  flex-direction: row;
+  padding-left: 10px;
+  padding-bottom: 1.5rem;
+  padding-top: 0.5rem;
+}
+
+.each-check {
+  padding-right: 20px;
+}
+
+.checkIcon {
+  padding-right: 10px;
+}
+
+.form {
+  padding-left: 10px;
+  margin-top: 2.5rem;
+}
+
+.form-group {
+  padding-bottom: 1rem;
+}
+
+.form-group h4 {
+  font-size: 16px;
+  padding-bottom: 5px;
+}
+
+.form-group input {
+  width: 90vw;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+.form-group textarea {
+  width: 90vw;
+  height: 150px;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+.send button {
+  background-color: #000;
+  color: #fff;
+  padding: 15px 25px;
+  border: none;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  /* margin: 20px 80px; */
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.contactDetails {
+  padding-left: 10px;
+  padding-top: 3rem;
+}
+
+.email-add h4 {
+  font-size: 16px;
+  padding-bottom: 10px;
+}
+
+.email-add p {
+  font-size: 16px;
+  padding-bottom: 1rem;
+}
+
+.phone-nos h4 {
+  font-size: 16px;
+  padding-bottom: 10px;
+}
+
+.phone-nos p {
+  font-size: 16px;
+  padding-bottom: 1rem;
+}
+
+.social-media h4 {
+  font-size: 16px;
+  padding-bottom: 10px;
+}
+
+/* .the-socials {
+  padding-left: 10px;
+} */
+
+.each-socials {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: 0.5rem;
+}
+
+.each-socials img {
+  width: 15px;
+  height: 15px;
+  padding-right: 10px;
+}
+
+.questions2 {
+  margin-top: 2rem;
+  padding: 10px;
+}
+
+.questions2 h2 {
+  font-size: 22px;
+  padding-bottom: 15px;
+}
+
+.each-question2 {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.main-question2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.each-question2 h4 {
+  font-size: 16px;
+  padding-right: 5px;
+}
+
+.each-question2 p {
+  font-size: 16px;
+  padding-top: 15px;
+}
+

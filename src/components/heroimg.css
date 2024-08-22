@@ -1,0 +1,1113 @@
+.homepage img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.firstPage {
+  position: relative;
+  background-image: url("../assets/mainHome.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  padding-top: 7rem;
+  color: #fff;
+  overflow: hidden;
+}
+
+.gradient-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2));
+  z-index: 1;
+  pointer-events: none;
+  overflow: hidden;
+  height: 100%;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+}
+
+.firstPage h1 {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 35px;
+  padding-left: 10px;
+}
+
+.firstPage p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  padding-left: 10px;
+  padding-top: 20px;
+}
+
+.firstPage button {
+  background-color: #fff;
+  color: #000;
+  padding: 15px 25px;
+  border: none;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  margin: 50px 10px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.arrowIcon {
+  padding-left: 5px;
+}
+
+.secondPage {
+  margin-top: 3rem;
+  padding: 10px;
+}
+
+.secondPageTopic h2 {
+  font-size: 22px;
+  padding-bottom: 15px;
+}
+
+.secondPageTopic p {
+  font-size: 16px;
+  padding-bottom: 3rem;
+  line-height: 24px;
+}
+
+.secondPageCard h3 {
+  font-size: 14px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  color: #808080;
+}
+
+.secondPageCard h2 {
+  font-size: 22px;
+  padding-bottom: 15px;
+}
+
+.secondPageCard p {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.thirdPage {
+  margin-top: 1rem;
+  padding: 10px;
+}
+
+.thirdPage h3 {
+  font-size: 14px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  color: #808080;
+}
+
+.thirdPage h2 {
+  font-size: 22px;
+  padding-bottom: 15px;
+}
+
+.thirdPage p {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.fourthPage {
+  margin-top: 1rem;
+  padding: 10px;
+}
+
+.fourthPage h3 {
+  font-size: 14px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  color: #808080;
+}
+
+.fourthPage h2 {
+  font-size: 22px;
+  padding-bottom: 15px;
+}
+
+.fourthPage p {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 3rem;
+}
+
+.testimonies {
+  margin-top: 1rem;
+  background-color: #f9f9f9;
+}
+
+.testimonies img {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+}
+
+.testimonies h1 {
+  padding-top: 65px;
+  font-size: 22px;
+  padding-bottom: 15px;
+  padding-left: 10px;
+}
+
+.testimonies-p {
+  font-size: 16px;
+  line-height: 24px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.testimony img {
+  width: 50px;
+  height: 50px;
+  position: relative;
+}
+
+.each-testimony {
+  background-color: rgb(142, 142, 142);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 10px;
+  color: #fff;
+}
+
+.person {
+  display: flex;
+}
+
+.personInfo {
+  padding: 0 10px;
+}
+
+.personInfo h3 {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.personInfo p {
+  font-size: 14px;
+}
+
+.each-quote {
+  font-size: 16px;
+  padding: 10px 0;
+}
+
+.prevNext {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  padding-bottom: 10px;
+}
+
+.prevNext button {
+  background-color: transparent;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 8px 12px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 2rem;
+  font-size: 18px;
+  cursor: pointer;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.discoverUs {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: #fff;
+  background-color: #000;
+  padding-bottom: 20px;
+  /* justify-content: center;
+  align-items: center; */
+}
+
+.discoverUs h3 {
+  font-size: 22px;
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.discoverUs p {
+  font-size: 16px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.discoverUs button {
+  background-color: #fff;
+  color: #000;
+  padding: 15px 25px;
+  border: none;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  margin: 20px 85px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.arrowIcon {
+  padding-left: 5px;
+}
+
+.brands {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  background-color: #f9f9f9;
+}
+
+.brands h2 {
+  font-size: 22px;
+  padding-bottom: 15px;
+  margin-top: 2rem;
+}
+
+.brands p {
+  font-size: 16px;
+  line-height: 24px;
+  /* padding-bottom: 1rem; */
+}
+
+.brands img {
+  width: 100px;
+  height: 80px;
+  /* margin: 10px; */
+}
+
+.questions {
+  margin-top: 2rem;
+  padding: 10px;
+}
+
+.questions h2 {
+  font-size: 22px;
+  padding-bottom: 15px;
+}
+
+.each-question {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.main-question {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.each-question h4 {
+  font-size: 16px;
+  padding-right: 5px;
+}
+
+.each-question p {
+  font-size: 16px;
+  padding-top: 15px;
+}
+
+@media screen and (min-width: 768px) {
+
+  .firstPage {
+    height: 45vh;
+  }
+
+  .gradient-overlay {
+    background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2));
+  }
+
+  .content {
+    padding: 0 2rem;
+    width: 50%;
+  }
+
+  .firstPage h1 {
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  .firstPage p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .firstPage button {
+    font-size: 14px;
+    padding: 10px 15px;
+    margin: 1rem 0.5rem;
+  }
+
+  .secondPage {
+    padding: 0 1rem;
+  }
+
+  .secondPageTopic {
+    text-align: center;
+    padding: 0 8rem;
+  }
+
+  .secondPageTopic h2 {
+    padding-top: 2rem;
+    font-size: 25px;
+  }
+
+  .secondPageTopic p {
+    font-size: 14px;
+    line-height: 20px;
+    padding-bottom: 1rem;
+  }
+
+  .secondPageCard {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .secondPageCard img {
+    max-width: 40%;
+    height: 18rem;
+  }
+
+  .secondPageCard h3 {
+    font-size: 12px;
+    padding-bottom: 5px;
+    padding-top: 0;
+  }
+
+  .secondPageCard h2 {
+    font-size: 18px;
+    line-height: 25px;
+    padding-bottom: 5px;
+  }
+
+  .secondPageCard p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .thirdPage {
+    padding: 0 1rem;
+    margin: 0;
+  }
+
+  .thirdPageCard {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .thirdPageCard img {
+    max-width: 40%;
+    height: 18rem;
+  }
+
+  .thirdPageCard h3 {
+    font-size: 12px;
+    padding-bottom: 5px;
+  }
+
+  .thirdPageCard h2 {
+    font-size: 18px;
+    padding-bottom: 5px;
+  }
+
+  .thirdPageCard p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .fourthPage {
+    padding: 0 1rem;
+    margin: 0;
+  }
+
+  .fourthPageCard {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .fourthPageCard img {
+    max-width: 40%;
+    height: 18rem;
+  }
+
+  .fourthPageCard h3 {
+    font-size: 12px;
+    padding-bottom: 5px;
+  }
+
+  .fourthPageCard h2 {
+    font-size: 18px;
+    padding-bottom: 5px;
+  }
+
+  .fourthPageCard p {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 0;
+  }
+
+  /* .testimony {
+    padding: 3rem 3.5rem;
+  } */
+
+  .testimonies h1 {
+    font-size: 25px;
+    padding-top: 3rem;
+    padding-left: 1rem;
+  }
+
+  .testimonies-p {
+    font-size: 14px;
+    line-height: 15px;
+    width: 50%;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+  }
+
+  .testimonies img {
+  width: 7rem;
+  height: 6rem;
+  }
+
+  .prevNext {
+    display: none;
+  }
+
+  .testimony {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .testimony img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .each-testimony {
+    flex-basis: calc(33.333% - 2rem);
+    max-width: calc(33.333% - 2rem);
+    margin-bottom: 1rem;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .personInfo h3 {
+    font-size: 12px;
+  }
+
+  .personInfo p {
+    font-size: 10px;
+  }
+
+  .each-quote {
+    font-size: 12px;
+    padding-top: 5px;
+    padding-bottom: 0;
+  }
+
+  .discover {
+    padding: 2rem 1rem;
+  }
+
+  .discoverUs {
+    padding: 2rem 1rem;
+    border-radius: 15px;
+    margin-bottom: 2rem;
+  }
+
+  .discoverUs h3 {
+    font-size: 18px;
+    line-height: 25px;
+    padding: 1rem 12rem;
+  }
+
+  .discoverUs p {
+    font-size: 12px;
+    line-height: 15px;
+    padding: 0 12rem;
+  }
+
+  .discoverUs button {
+    font-size: 12px;
+    padding: 0.8rem 0;
+    margin-left: 17.5rem;
+    margin-right: 17.5rem;
+  }
+
+  .brands {
+    padding: 1rem 1rem;
+  }
+
+  .brands h2 {
+    font-size: 25px;
+    padding-bottom: 0;
+  }
+
+  .brands p {
+    font-size: 14px;
+    line-height: 25px;
+  }
+
+  .brands img {
+    width: 10rem;
+    height: 6rem;
+  }
+
+  .questions {
+    padding: 1rem 7rem;
+    /* text-align: center; */
+  }
+
+  .questions h2 {
+    font-size: 25px;
+    text-align: center;
+    /* line-height: 48px; */
+  }
+
+  .each-question h4 {
+    font-size: 14px;
+  }
+
+  .each-question p {
+    font-size: 12px;
+    padding-top: 10px;
+  }
+
+  .main-question {
+    justify-content: space-between;
+  }
+
+}
+
+@media screen and (min-width: 1024px) {
+
+  .firstPage {
+    height: 45vh;
+  }
+
+  .content {
+    padding: 2rem 3.5rem;
+    width: 50%;
+  }
+
+  .firstPage h1 {
+    font-size: 40px;
+    line-height: 56px;
+  }
+
+  .firstPage p {
+    font-size: 16px;
+    line-height: 25px;
+    padding-top: 5px;
+  }
+
+  .firstPage button {
+    font-size: 16px;
+    padding: 15px 20px;
+  }
+
+  .secondPage {
+    padding: 0 3.5rem;
+  }
+
+  .secondPageTopic {
+    text-align: center;
+    padding: 0 12rem;
+  }
+
+  .secondPageTopic h2 {
+    padding-top: 2rem;
+    font-size: 35px;
+  }
+
+  .secondPageTopic p {
+    font-size: 16px;
+    line-height: 25px;
+    padding-bottom: 3rem;
+  }
+
+  .secondPageCard {
+    padding: 2rem 10px;
+    display: flex;
+    align-items: center;
+    /* justify-content: flex-start; */
+    gap: 4rem;
+  }
+
+  .secondPageCard img {
+    max-width: 40%;
+    height: 15rem;
+  }
+
+  .secondPageCard h3 {
+    font-size: 14px;
+  }
+
+  .secondPageCard h2 {
+    font-size: 26px;
+    padding-bottom: 1rem;
+  }
+
+  .secondPageCard p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .thirdPage {
+    padding: 0 3.5rem;
+  }
+
+  .thirdPageCard {
+    padding: 2rem 10px;
+    gap: 4rem;
+  }
+
+  .thirdPageCard img {
+    max-width: 40%;
+    height: 15rem;
+  }
+
+  .thirdPageCard h3 {
+    font-size: 14px;
+  }
+
+  .thirdPageCard h2 {
+    font-size: 26px;
+    padding-bottom: 1rem;
+  }
+
+  .thirdPageCard p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .fourthPage {
+    padding: 0 3.5rem;
+  }
+
+  .fourthPageCard {
+    padding: 2rem 10px;
+    gap: 4rem;
+  }
+
+  .fourthPageCard img {
+    max-width: 40%;
+    height: 15rem;
+  }
+
+  .fourthPageCard h3 {
+    font-size: 14px;
+  }
+
+  .fourthPageCard h2 {
+    font-size: 26px;
+    padding-bottom: 1rem;
+  }
+
+  .fourthPageCard p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .testimonies h1 {
+    font-size: 35px;
+    padding-top: 5rem;
+    padding-left: 3.5rem;
+  }
+
+  .testimonies-p {
+    font-size: 16px;
+    line-height: 24px;
+    width: 40%;
+    padding-bottom: 2rem;
+    padding-left: 3.5rem;
+  }
+
+  .testimony {
+    gap: 2rem;
+    padding: 0 3.5rem;
+    padding-bottom: 2rem;
+  }
+
+  .testimony img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .each-testimony {
+    margin-bottom: 2rem;
+  }
+  
+  .personInfo h3 {
+    font-size: 16px;
+  }
+
+  .personInfo p {
+    font-size: 14px;
+  }
+
+  .each-quote {
+    font-size: 16px;
+    padding-top: 5px;
+    padding-bottom: 0;
+  }
+
+  .discover {
+    padding: 2rem 3.5rem;
+  }
+
+  .discoverUs {
+    padding: 2rem 0;
+    border-radius: 20px;
+    margin-bottom: 2rem;
+  }
+
+  .discoverUs h3 {
+    font-size: 35px;
+    line-height: 48px;
+    padding: 1rem 10rem;
+  }
+
+  .discoverUs p {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 1rem 11rem;
+  }
+
+  .discoverUs button {
+    font-size: 16px;
+    padding: 1rem 2rem;
+    margin-left: 22.7rem;
+    margin-right: 22.7rem;
+  }
+
+  .brands {
+    padding: 2rem 3.5rem;
+  }
+
+  .brands h2 {
+    font-size: 35px;
+  }
+
+  .brands p {
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .brands img {
+    width: 12rem;
+    height: 6rem;
+  }
+
+  .questions {
+    padding: 2rem 11rem;
+  }
+
+  .questions h2 {
+    font-size: 35px;
+  }
+
+  .each-question {
+    margin: 1.5rem 0;
+  }
+  
+  .each-question h4 {
+    font-size: 16px;
+  }
+
+  .each-question p {
+    font-size: 14px;
+    padding-top: 10px;
+  }
+
+
+}
+
+@media screen and (min-width: 1440px) {
+
+  .firstPage {
+    height: 45vh;
+  }
+
+  .content {
+    padding: 4rem 3.5rem;
+    width: 40%;
+  }
+
+  .firstPage h1 {
+    font-size: 48px;
+    line-height: 56px;
+  }
+
+  .firstPage p {
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .firstPage button {
+    font-size: 18px;
+    padding: 20px 30px;
+  }
+
+  .secondPage {
+    padding: 0 3.5rem;
+  }
+
+  .secondPageTopic {
+    text-align: center;
+    padding: 0 17rem;
+  }
+
+  .secondPageTopic h2 {
+    padding-top: 3rem;
+    font-size: 40px;
+  }
+
+  .secondPageTopic p {
+    font-size: 18px;
+    line-height: 25px;
+    padding-bottom: 3rem;
+  }
+
+  .secondPageCard {
+    padding: 2rem 10px;
+    display: flex;
+    align-items: center;
+    /* justify-content: flex-start; */
+    gap: 6rem;
+  }
+
+  .secondPageCard img {
+    max-width: 40%;
+    height: 18rem;
+  }
+
+  .secondPageCard h3 {
+    font-size: 16px;
+  }
+
+  .secondPageCard h2 {
+    font-size: 32px;
+  }
+
+  .secondPageCard p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .thirdPage {
+    padding: 2rem 3.5rem;
+  }
+
+  .thirdPageCard {
+    padding: 2rem 10px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    /* justify-content: flex-start; */
+    gap: 6rem;
+  }
+
+  .thirdPageCard img {
+    max-width: 40%;
+    height: 18rem;
+  }
+
+  .thirdPageCard h3 {
+    font-size: 16px;
+  }
+
+  .thirdPageCard h2 {
+    font-size: 32px;
+  }
+
+  .thirdPageCard p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .fourthPage {
+    padding: 0 3.5rem;
+    padding-bottom: 2rem;
+  }
+
+  .fourthPageCard {
+    padding: 2rem 10px;
+    display: flex;
+    align-items: center;
+    /* justify-content: flex-start; */
+    gap: 6rem;
+  }
+
+  .fourthPageCard img {
+    max-width: 40%;
+    height: 18rem;
+  }
+
+  .fourthPageCard h3 {
+    font-size: 16px;
+  }
+
+  .fourthPageCard h2 {
+    font-size: 32px;
+  }
+
+  .fourthPageCard p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  /* .testimony {
+    padding: 3rem 3.5rem;
+  } */
+
+  .testimonies h1 {
+    font-size: 40px;
+    padding-top: 5rem;
+    padding-left: 3.5rem;
+  }
+
+  .testimonies-p {
+    font-size: 16px;
+    line-height: 24px;
+    width: 40%;
+    padding-bottom: 2rem;
+    padding-left: 3.5rem;
+  }
+
+  .testimonies img {
+  width: 10rem;
+  height: 10rem;
+  }
+
+  .prevNext {
+    display: none;
+  }
+
+  .testimony {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 0 3.5rem;
+    padding-bottom: 2rem;
+  }
+
+  .testimony img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .each-testimony {
+    flex-basis: calc(33.333% - 2rem);
+    max-width: calc(33.333% - 2rem);
+    margin-bottom: 2rem;
+  }
+
+  
+  .personInfo h3 {
+    font-size: 18px;
+  }
+
+  .personInfo p {
+    font-size: 16px;
+  }
+
+  .each-quote {
+    font-size: 18px;
+    padding-top: 5px;
+    padding-bottom: 0;
+  }
+
+  .discover {
+    padding: 2rem 3.5rem;
+  }
+
+  .discoverUs {
+    padding: 2rem 3.5rem;
+    border-radius: 20px;
+    margin-bottom: 2rem;
+
+  }
+
+  .discoverUs h3 {
+    font-size: 40px;
+    line-height: 48px;
+    padding: 1rem 18rem;
+  }
+
+  .discoverUs p {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 1rem 21rem;
+  }
+
+  .discoverUs button {
+    font-size: 16px;
+    padding: 1rem 2rem;
+    margin-left: 32rem;
+    margin-right: 32rem;
+  }
+
+  .brands {
+    padding: 2rem 3.5rem;
+  }
+
+  .brands h2 {
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  .brands p {
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .brands img {
+    width: 12.5rem;
+    height: 8rem;
+  }
+
+  .questions {
+    padding: 2rem 19rem;
+    /* text-align: center; */
+  }
+
+  .questions h2 {
+    font-size: 40px;
+    text-align: center;
+    /* line-height: 48px; */
+  }
+
+  .main-question {
+    justify-content: space-between;
+  }
+}
