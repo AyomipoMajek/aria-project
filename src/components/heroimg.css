@@ -606,37 +606,33 @@
     justify-content: space-between;
   }
 
-
-
 }
+
 @media screen and (min-width: 1024px) {
 
   .firstPage {
     height: 45vh;
   }
 
-  .gradient-overlay {
-    background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2));
-  }
-
   .content {
-    padding: 4rem 3.5rem;
-    width: 40%;
+    padding: 2rem 3.5rem;
+    width: 50%;
   }
 
   .firstPage h1 {
-    font-size: 48px;
+    font-size: 40px;
     line-height: 56px;
   }
 
   .firstPage p {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 25px;
+    padding-top: 5px;
   }
 
   .firstPage button {
-    font-size: 18px;
-    padding: 20px 30px;
+    font-size: 16px;
+    padding: 15px 20px;
   }
 
   .secondPage {
@@ -645,16 +641,16 @@
 
   .secondPageTopic {
     text-align: center;
-    padding: 0 17rem;
+    padding: 0 12rem;
   }
 
   .secondPageTopic h2 {
-    padding-top: 3rem;
-    font-size: 40px;
+    padding-top: 2rem;
+    font-size: 35px;
   }
 
   .secondPageTopic p {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 25px;
     padding-bottom: 3rem;
   }
@@ -664,20 +660,21 @@
     display: flex;
     align-items: center;
     /* justify-content: flex-start; */
-    gap: 6rem;
+    gap: 4rem;
   }
 
   .secondPageCard img {
     max-width: 40%;
-    height: 18rem;
+    height: 15rem;
   }
 
   .secondPageCard h3 {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .secondPageCard h2 {
-    font-size: 32px;
+    font-size: 26px;
+    padding-bottom: 1rem;
   }
 
   .secondPageCard p {
@@ -686,29 +683,26 @@
   }
 
   .thirdPage {
-    padding: 2rem 3.5rem;
+    padding: 0 3.5rem;
   }
 
   .thirdPageCard {
     padding: 2rem 10px;
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    /* justify-content: flex-start; */
-    gap: 6rem;
+    gap: 4rem;
   }
 
   .thirdPageCard img {
     max-width: 40%;
-    height: 18rem;
+    height: 15rem;
   }
 
   .thirdPageCard h3 {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .thirdPageCard h2 {
-    font-size: 32px;
+    font-size: 26px;
+    padding-bottom: 1rem;
   }
 
   .thirdPageCard p {
@@ -718,28 +712,25 @@
 
   .fourthPage {
     padding: 0 3.5rem;
-    padding-bottom: 2rem;
   }
 
   .fourthPageCard {
     padding: 2rem 10px;
-    display: flex;
-    align-items: center;
-    /* justify-content: flex-start; */
-    gap: 6rem;
+    gap: 4rem;
   }
 
   .fourthPageCard img {
     max-width: 40%;
-    height: 18rem;
+    height: 15rem;
   }
 
   .fourthPageCard h3 {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .fourthPageCard h2 {
-    font-size: 32px;
+    font-size: 26px;
+    padding-bottom: 1rem;
   }
 
   .fourthPageCard p {
@@ -747,12 +738,8 @@
     line-height: 24px;
   }
 
-  /* .testimony {
-    padding: 3rem 3.5rem;
-  } */
-
   .testimonies h1 {
-    font-size: 40px;
+    font-size: 35px;
     padding-top: 5rem;
     padding-left: 3.5rem;
   }
@@ -765,18 +752,7 @@
     padding-left: 3.5rem;
   }
 
-  .testimonies img {
-  width: 10rem;
-  height: 10rem;
-  }
-
-  .prevNext {
-    display: none;
-  }
-
   .testimony {
-    display: flex;
-    justify-content: space-between;
     gap: 2rem;
     padding: 0 3.5rem;
     padding-bottom: 2rem;
@@ -788,9 +764,21 @@
   }
 
   .each-testimony {
-    flex-basis: calc(33.333% - 2rem);
-    max-width: calc(33.333% - 2rem);
     margin-bottom: 2rem;
+  }
+  
+  .personInfo h3 {
+    font-size: 16px;
+  }
+
+  .personInfo p {
+    font-size: 14px;
+  }
+
+  .each-quote {
+    font-size: 16px;
+    padding-top: 5px;
+    padding-bottom: 0;
   }
 
   .discover {
@@ -798,29 +786,28 @@
   }
 
   .discoverUs {
-    padding: 2rem 3.5rem;
+    padding: 2rem 0;
     border-radius: 20px;
     margin-bottom: 2rem;
-
   }
 
   .discoverUs h3 {
-    font-size: 40px;
+    font-size: 35px;
     line-height: 48px;
-    padding: 1rem 18rem;
+    padding: 1rem 10rem;
   }
 
   .discoverUs p {
     font-size: 16px;
     line-height: 24px;
-    padding: 1rem 21rem;
+    padding: 1rem 11rem;
   }
 
   .discoverUs button {
     font-size: 16px;
     padding: 1rem 2rem;
-    margin-left: 32rem;
-    margin-right: 32rem;
+    margin-left: 22.7rem;
+    margin-right: 22.7rem;
   }
 
   .brands {
@@ -828,8 +815,7 @@
   }
 
   .brands h2 {
-    font-size: 40px;
-    line-height: 48px;
+    font-size: 35px;
   }
 
   .brands p {
@@ -838,38 +824,40 @@
   }
 
   .brands img {
-    width: 12.5rem;
-    height: 8rem;
+    width: 12rem;
+    height: 6rem;
   }
 
   .questions {
-    padding: 2rem 19rem;
-    /* text-align: center; */
+    padding: 2rem 11rem;
   }
 
   .questions h2 {
-    font-size: 40px;
-    text-align: center;
-    /* line-height: 48px; */
+    font-size: 35px;
   }
 
-  .main-question {
-    justify-content: space-between;
+  .each-question {
+    margin: 1.5rem 0;
+  }
+  
+  .each-question h4 {
+    font-size: 16px;
   }
 
+  .each-question p {
+    font-size: 14px;
+    padding-top: 10px;
+  }
 
 
 }
+
 @media screen and (min-width: 1440px) {
 
   .firstPage {
     height: 45vh;
   }
 
-  .gradient-overlay {
-    background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2));
-  }
-
   .content {
     padding: 4rem 3.5rem;
     width: 40%;
@@ -1044,6 +1032,21 @@
     margin-bottom: 2rem;
   }
 
+  
+  .personInfo h3 {
+    font-size: 18px;
+  }
+
+  .personInfo p {
+    font-size: 16px;
+  }
+
+  .each-quote {
+    font-size: 18px;
+    padding-top: 5px;
+    padding-bottom: 0;
+  }
+
   .discover {
     padding: 2rem 3.5rem;
   }
@@ -1107,7 +1110,4 @@
   .main-question {
     justify-content: space-between;
   }
-
-
-
 }
