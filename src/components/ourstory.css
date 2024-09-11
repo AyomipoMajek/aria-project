@@ -113,3 +113,338 @@
 .arrowIcon {
   padding-left: 5px;
 }
+
+@media screen and (min-width: 768px) {
+
+  .ourstory {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .aboutUs {
+    padding-left: 2.5rem;
+    padding-right: 5.5rem;
+  }
+
+  .ourstory p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .who {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .who-image {
+    width: 40%;
+    height: 100%;
+    margin-right: 3rem;
+  }
+
+  .who h3 {
+    font-size: 12px;
+    padding-bottom: 5px;
+  }
+
+  .who h1 {
+    font-size: 25px;
+    padding-bottom: 0;
+  }
+
+  .mission {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .mission-image {
+    width: 20%;
+    height: 100%;
+    padding: 0;
+    /* margin-left: 3rem; */
+  }
+
+  .mission h2 {
+    font-size: 14px;
+    padding: 0.5rem 0;
+  }
+
+  .coreValues {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem 2.5rem;
+  }
+
+  .the-values {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between;
+    gap: 2rem; */
+  }
+
+  .coreValues h1 {
+    font-size: 18px;
+    padding: 0;
+  }
+
+  .each-value {
+    width: 10rem;
+    margin: 0 5px;
+    padding: 5px;
+  }
+
+  .imgh3 img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .each-value h3 {
+    font-size: 14px;
+    padding-left: 4px;
+  }
+
+  .each-value p {
+    padding-top: 8px;
+  }
+
+  .discover {
+    padding: 1rem 2.5rem;
+  }
+
+  .discoverUs2 {
+    border-radius: 15px;
+  }
+
+  .discoverUs2 h3 {
+    font-size: 18px;
+    padding-top: 2rem;
+    padding-bottom: 0.5rem;
+    padding-left: 12rem;
+    padding-right: 12rem;
+  }
+
+  .discoverUs2 p {
+    padding-left: 12rem;
+    padding-right: 12rem;
+  }
+
+  .discoverUs2 button {
+    padding: 12px 1px;
+    margin: 20px 18rem;
+    /* font-size: 14px; */
+  }
+}
+
+@media screen and (min-width: 1024px) {
+
+  .aboutUs {
+    position: relative; /* Add this */
+    padding-left: 2.5rem;
+    padding-right: 3rem;
+    padding-bottom: 2rem;
+  }
+
+  .who h3 {
+    font-size: 14px;
+  }
+
+  .ourstory {
+    padding-top: 8rem;
+  }
+
+  .ourstory p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .who h1 {
+    font-size: 35px;
+  }
+
+  .who-image {
+    margin: 0;
+    padding: 0;
+    position: relative; /* To control its stacking context */
+    width: 40vw; /* Adjust as needed */
+    height: auto;
+    z-index: 0; /* Ensures it stays above the mission image */
+    margin-top: 3rem;
+  }
+
+  .head-p {
+    width: 50%;
+  }
+
+  .mission {
+    display: flex; /* To arrange elements side by side */
+    flex-direction: row; /* Stacks paragraphs on top and bottom */
+    align-items: center; /* Centers the mission image horizontally */
+    position: relative; /* Allows mission-image to be positioned within */
+    gap: 15rem;;
+  }
+
+  .mission h2 {
+    font-size: 16px;
+  }
+
+  .head-p2 {
+    /* padding-top: 20px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .mission-image {
+  position: absolute;
+  top: 45%;
+  left: 48%;
+  transform: translate(-50%, -50%); /* Centers the image horizontally */
+  width: 22vw;
+  height: auto;
+  border-radius: 5px;
+  z-index: 1;
+}
+
+.coreValues {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+  .coreValues h1 {
+    font-size: 30px;
+  }
+
+  .each-value {
+    width: 13rem;
+    margin: 0 5px;
+    padding: 15px;
+  }
+
+  .each-value h3 {
+    font-size: 16px;
+  }
+
+  .discover {
+    padding: 2rem 2.5rem;
+  }
+
+  .discoverUs2 h3 {
+    font-size: 30px;
+  }
+
+  .discoverUs2 p {
+    font-size: 16px;
+  }
+
+  .discoverUs2 button {
+    padding: 15px 20px;
+    margin: 20px 25rem;
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .ourstory {
+    padding-top: 8rem;
+  }
+
+  .ourstory p {
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .aboutUs {
+    padding-right: 16rem;
+    padding-left: 4rem;
+  }
+
+  .who {
+    gap: 1rem;
+  }
+
+  .who h1 {
+    font-size: 48px;
+  }
+
+  .who h3 {
+    font-size: 16px;
+  }
+
+  .who-image {
+    width: 32vw;
+    height: auto;
+    margin-top: 3rem;
+    margin-right: 1rem;
+  }
+
+  .mission h2 {
+    font-size: 18px;
+  }
+
+  .mission-para {
+    padding-left: 9rem;
+  }
+
+  .mission-image {
+    width: 19vw;
+    height: auto;
+    left: 50%;
+  }
+
+  .coreValues {
+    padding: 5rem 4rem;
+  }
+
+  .coreValues h1 {
+    font-size: 40px;
+  }
+
+  .imgh3 img {
+    width: 40px;
+    height: 40px;
+}
+
+  .each-value {
+    width: 18rem;
+    margin: 0 1rem;
+    padding: 25px;
+  }
+
+  .each-value h3 {
+    font-size: 18px;
+    padding-left: 10px;
+  }
+
+  .each-value p {
+    font-size: 16px;
+  }
+
+  .discover {
+    padding: 2.5rem 4rem;
+  }
+
+  .discoverUs2 h3 {
+    font-size: 40px;
+    padding-left: 20rem;
+    padding-right: 20rem;
+  }
+
+  .discoverUs2 p {
+    font-size: 16px;
+    padding-left: 24rem;
+    padding-right: 24rem;
+  }
+
+  .discoverUs2 button {
+    padding: 20px 10px;
+    margin: 20px 36.5rem;
+    font-size: 14px;
+  }
+  
+}
