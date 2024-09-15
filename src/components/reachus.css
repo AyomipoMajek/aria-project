@@ -58,7 +58,7 @@
   padding-right: 10px;
 }
 
-.form {
+.the-form {
   padding-left: 10px;
   margin-top: 2.5rem;
 }
@@ -183,5 +183,24 @@
 .each-question2 p {
   font-size: 16px;
   padding-top: 15px;
+}
+
+@media screen and (min-width: 760px) {
+
+  .intro {
+    padding-left: 2rem;
+  }
+
+  .intro h1 {
+    font-size: 25px;
+  }
+
+  .intro p {
+    font-size: 14px;
+  }
+
+  .each-check {
+    font-size: 14px;
+  }
 }
 

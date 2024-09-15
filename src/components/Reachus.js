@@ -25,86 +25,88 @@ const Reachus = () => {
 
   return (
     <div className="reachus">
-      <div className="intro">
-        <div className="gradient-overlay2" />
-        <div className="content2">
-          <h1>Let&apos;s work together !</h1>
-          <p>
-            Our dedicated team is ready to assist you with any inquiries,
-            questions, or requests you may habe. Whether you are seeking
-            information about our services, want to discuss a potential
-            project, or simply have a general query, we are here to help.
-          </p>
-          <div className="check">
-            <div className="each-check">
-              <FontAwesomeIcon icon={faCheckCircle} style={{ color: '#ffffff' }} className="checkIcon" />
-              Contact us
-            </div>
-            <div className="each-check">
-              <FontAwesomeIcon icon={faCheckCircle} style={{ color: '#ffffff' }} className="checkIcon" />
-              Great service
+      <div className="trio">
+        <div className="intro">
+          <div className="gradient-overlay2" />
+          <div className="content2">
+            <h1>Let&apos;s work together !</h1>
+            <p>
+              Our dedicated team is ready to assist you with any inquiries,
+              questions, or requests you may habe. Whether you are seeking
+              information about our services, want to discuss a potential
+              project, or simply have a general query, we are here to help.
+            </p>
+            <div className="check">
+              <div className="each-check">
+                <FontAwesomeIcon icon={faCheckCircle} style={{ color: '#ffffff' }} className="checkIcon" />
+                Contact us
+              </div>
+              <div className="each-check">
+                <FontAwesomeIcon icon={faCheckCircle} style={{ color: '#ffffff' }} className="checkIcon" />
+                Great service
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div className="form">
-        <form>
-          <div className="form-group">
-            <h4>First name</h4>
-            <input type="text" />
-          </div>
-          <div className="form-group">
-            <h4>Last name</h4>
-            <input type="text" />
-          </div>
-          <div className="form-group">
-            <h4>Email Address</h4>
-            <input type="email" />
-          </div>
-          <div className="form-group">
-            <h4>Phone number</h4>
-            <input type="tel" />
-          </div>
-          <div className="form-group">
-            <h4>Service</h4>
-            <input type="text" />
-          </div>
-          <div className="form-group">
-            <h4>Message</h4>
-            <textarea />
-          </div>
-          <div className="send">
-            <button type="submit">Send request</button>
-          </div>
-        </form>
-      </div>
+        <div className="the-form">
+          <form>
+            <div className="form-group">
+              <h4>First name</h4>
+              <input type="text" />
+            </div>
+            <div className="form-group">
+              <h4>Last name</h4>
+              <input type="text" />
+            </div>
+            <div className="form-group">
+              <h4>Email Address</h4>
+              <input type="email" />
+            </div>
+            <div className="form-group">
+              <h4>Phone number</h4>
+              <input type="tel" />
+            </div>
+            <div className="form-group">
+              <h4>Service</h4>
+              <input type="text" />
+            </div>
+            <div className="form-group">
+              <h4>Message</h4>
+              <textarea />
+            </div>
+            <div className="send">
+              <button type="submit">Send request</button>
+            </div>
+          </form>
+        </div>
 
-      <div className="contactDetails">
-        <div className="email-add">
-          <h4>Email</h4>
-          <p>hello@ariaprojectsltd.com</p>
-        </div>
-        <div className="phone-nos">
-          <h4>Phone</h4>
-          <p>+234 (0)8102691145</p>
-          <p>+1 (801) 428-9257</p>
-          <p>+44 (0) 7823466355</p>
-        </div>
-        <div className="social-media">
-          <h4>Social media</h4>
-          <div className="the-socials">
-            <div className="each-socials">
-              <img src={ig} alt="instagram" />
-              @ariaprojectsltd
-            </div>
-            <div className="each-socials">
-              <img src={tweet} alt="twitter" />
-              @ariaprojectsltd
-            </div>
-            <div className="each-socials">
-              <img src={linkedn} alt="linkedn" />
-              @ariaprojectsltd
+        <div className="contactDetails">
+          <div className="email-add">
+            <h4>Email</h4>
+            <p>hello@ariaprojectsltd.com</p>
+          </div>
+          <div className="phone-nos">
+            <h4>Phone</h4>
+            <p>+234 (0)8102691145</p>
+            <p>+1 (801) 428-9257</p>
+            <p>+44 (0) 7823466355</p>
+          </div>
+          <div className="social-media">
+            <h4>Social media</h4>
+            <div className="the-socials">
+              <div className="each-socials">
+                <img src={ig} alt="instagram" />
+                @ariaprojectsltd
+              </div>
+              <div className="each-socials">
+                <img src={tweet} alt="twitter" />
+                @ariaprojectsltd
+              </div>
+              <div className="each-socials">
+                <img src={linkedn} alt="linkedn" />
+                @ariaprojectsltd
+              </div>
             </div>
           </div>
         </div>
