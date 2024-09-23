@@ -245,7 +245,7 @@
 
   .form {
     position: absolute;
-    height: 70vh;
+    height: auto;
     width: 40%;
     background: #fff;
     right: 0;
