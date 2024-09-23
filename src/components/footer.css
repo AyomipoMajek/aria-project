@@ -95,7 +95,6 @@
 }
 
 @media screen and (min-width: 768px) {
-
   .footer {
     display: flex;
     flex-direction: row;
@@ -103,10 +102,11 @@
     padding: 2rem 1rem;
   }
 
+  /*
   .logoP {
     width: 15rem;
     margin-left: 0;
-  }
+  } */
 
   .footer-arial-logo {
     width: 40px;
@@ -172,13 +172,14 @@
     height: 20px;
   }
 }
-@media screen and (min-width: 1024px) {
 
+@media screen and (min-width: 1024px) {
   .footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 4rem 3.5rem;
+    padding: 0 3.5rem;
+    padding-bottom: 4rem;
   }
 
   .logoP {
@@ -186,7 +187,6 @@
     margin-left: -4vw;
   }
 
-  
   .footer-arial-logo {
     width: 40px;
     height: 46px;
@@ -255,12 +255,12 @@
 }
 
 @media screen and (min-width: 1440px) {
-
   .footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 4rem 3.5rem;
+    padding: 0 3.5rem;
+    padding-bottom: 4rem;
   }
 
   .logoP {

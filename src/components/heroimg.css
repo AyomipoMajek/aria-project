@@ -234,6 +234,7 @@
   color: #fff;
   background-color: #000;
   padding-bottom: 20px;
+
   /* justify-content: center;
   align-items: center; */
 }
@@ -264,10 +265,6 @@
   font-weight: 700;
 }
 
-.arrowIcon {
-  padding-left: 5px;
-}
-
 .brands {
   display: flex;
   flex-direction: column;
@@ -287,12 +284,14 @@
 .brands p {
   font-size: 16px;
   line-height: 24px;
+
   /* padding-bottom: 1rem; */
 }
 
 .brands img {
   width: 100px;
   height: 80px;
+
   /* margin: 10px; */
 }
 
@@ -330,7 +329,6 @@
 }
 
 @media screen and (min-width: 768px) {
-
   .firstPage {
     height: 45vh;
   }
@@ -491,8 +489,8 @@
   }
 
   .testimonies img {
-  width: 7rem;
-  height: 6rem;
+    width: 7rem;
+    height: 6rem;
   }
 
   .prevNext {
@@ -584,12 +582,14 @@
 
   .questions {
     padding: 1rem 7rem;
+
     /* text-align: center; */
   }
 
   .questions h2 {
     font-size: 25px;
     text-align: center;
+
     /* line-height: 48px; */
   }
 
@@ -605,11 +605,9 @@
   .main-question {
     justify-content: space-between;
   }
-
 }
 
 @media screen and (min-width: 1024px) {
-
   .firstPage {
     height: 45vh;
   }
@@ -659,6 +657,7 @@
     padding: 2rem 10px;
     display: flex;
     align-items: center;
+
     /* justify-content: flex-start; */
     gap: 4rem;
   }
@@ -766,7 +765,7 @@
   .each-testimony {
     margin-bottom: 2rem;
   }
-  
+
   .personInfo h3 {
     font-size: 16px;
   }
@@ -839,7 +838,7 @@
   .each-question {
     margin: 1.5rem 0;
   }
-  
+
   .each-question h4 {
     font-size: 16px;
   }
@@ -848,12 +847,9 @@
     font-size: 14px;
     padding-top: 10px;
   }
-
-
 }
 
 @media screen and (min-width: 1440px) {
-
   .firstPage {
     height: 45vh;
   }
@@ -902,6 +898,7 @@
     padding: 2rem 10px;
     display: flex;
     align-items: center;
+
     /* justify-content: flex-start; */
     gap: 6rem;
   }
@@ -933,6 +930,7 @@
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
+
     /* justify-content: flex-start; */
     gap: 6rem;
   }
@@ -964,6 +962,7 @@
     padding: 2rem 10px;
     display: flex;
     align-items: center;
+
     /* justify-content: flex-start; */
     gap: 6rem;
   }
@@ -1005,8 +1004,8 @@
   }
 
   .testimonies img {
-  width: 10rem;
-  height: 10rem;
+    width: 10rem;
+    height: 10rem;
   }
 
   .prevNext {
@@ -1032,7 +1031,6 @@
     margin-bottom: 2rem;
   }
 
-  
   .personInfo h3 {
     font-size: 18px;
   }
@@ -1055,7 +1053,6 @@
     padding: 2rem 3.5rem;
     border-radius: 20px;
     margin-bottom: 2rem;
-
   }
 
   .discoverUs h3 {
@@ -1073,8 +1070,8 @@
   .discoverUs button {
     font-size: 16px;
     padding: 1rem 2rem;
-    margin-left: 32rem;
-    margin-right: 32rem;
+    margin-left: 31.9rem;
+    margin-right: 31.9rem;
   }
 
   .brands {
@@ -1098,12 +1095,14 @@
 
   .questions {
     padding: 2rem 19rem;
+
     /* text-align: center; */
   }
 
   .questions h2 {
     font-size: 40px;
     text-align: center;
+
     /* line-height: 48px; */
   }
 

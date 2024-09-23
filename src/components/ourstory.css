@@ -45,7 +45,7 @@
 
 .coreValues {
   margin-top: 3rem;
-  background: #FAFAFA;
+  background: #fafafa;
 }
 
 .coreValues h1 {
@@ -80,6 +80,7 @@
   color: #fff;
   background-color: #000;
   padding-bottom: 20px;
+
   /* justify-content: center;
   align-items: center; */
 }
@@ -115,7 +116,6 @@
 }
 
 @media screen and (min-width: 768px) {
-
   .ourstory {
     padding-left: 0;
     padding-right: 0;
@@ -167,6 +167,7 @@
     width: 20%;
     height: 100%;
     padding: 0;
+
     /* margin-left: 3rem; */
   }
 
@@ -185,6 +186,7 @@
   .the-values {
     display: flex;
     flex-direction: row;
+
     /* justify-content: space-between;
     gap: 2rem; */
   }
@@ -238,12 +240,12 @@
   .discoverUs2 button {
     padding: 12px 1px;
     margin: 20px 18rem;
+
     /* font-size: 14px; */
   }
 }
 
 @media screen and (min-width: 1024px) {
-
   .aboutUs {
     position: relative; /* Add this */
     padding-left: 2.5rem;
@@ -287,7 +289,7 @@
     flex-direction: row; /* Stacks paragraphs on top and bottom */
     align-items: center; /* Centers the mission image horizontally */
     position: relative; /* Allows mission-image to be positioned within */
-    gap: 15rem;;
+    gap: 15rem;
   }
 
   .mission h2 {
@@ -302,20 +304,21 @@
   }
 
   .mission-image {
-  position: absolute;
-  top: 45%;
-  left: 48%;
-  transform: translate(-50%, -50%); /* Centers the image horizontally */
-  width: 22vw;
-  height: auto;
-  border-radius: 5px;
-  z-index: 1;
-}
+    position: absolute;
+    top: 45%;
+    left: 48%;
+    transform: translate(-50%, -50%); /* Centers the image horizontally */
+    width: 22vw;
+    height: auto;
+    border-radius: 5px;
+    z-index: 1;
+  }
 
-.coreValues {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-}
+  .coreValues {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
   .coreValues h1 {
     font-size: 30px;
   }
@@ -408,7 +411,7 @@
   .imgh3 img {
     width: 40px;
     height: 40px;
-}
+  }
 
   .each-value {
     width: 18rem;
@@ -446,5 +449,4 @@
     margin: 20px 36.5rem;
     font-size: 14px;
   }
-  
 }
