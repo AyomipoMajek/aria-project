@@ -330,7 +330,7 @@
 
 @media screen and (min-width: 768px) {
   .firstPage {
-    height: 45vh;
+    height: 100%;
   }
 
   .gradient-overlay {
@@ -608,9 +608,9 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .firstPage {
+  /* .firstPage {
     height: 45vh;
-  }
+  } */
 
   .content {
     padding: 2rem 3.5rem;
@@ -850,9 +850,9 @@
 }
 
 @media screen and (min-width: 1440px) {
-  .firstPage {
+  /* .firstPage {
     height: 45vh;
-  }
+  } */
 
   .content {
     padding: 4rem 3.5rem;
