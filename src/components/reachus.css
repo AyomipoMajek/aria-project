@@ -191,9 +191,9 @@
 }
 
 @media (min-width: 768px) {
-
   .form {
     margin: 0.5rem;
+
     /* width: 100%; */
     background: #fff;
     padding: 35px;
@@ -316,7 +316,7 @@
 
   .form {
     width: 550px;/* top: -145%; */
-    top: 10%
+    top: 10%;
   }
 
   .name-flex input {
