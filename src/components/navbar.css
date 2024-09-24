@@ -123,7 +123,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    top: -160px;
+    top: auto;
     left: 90px;
     width: 100%;
     background: none;
@@ -180,8 +180,9 @@
   }
 
   .navmenu {
-    top: -220px;
+    top: auto;
     left: 140px;
+    height: 100%;
   }
 
   .navmenu li a {
@@ -210,6 +211,7 @@
   .navmenu {
     top: auto;
     left: 100px;
+    height: 100%;
   }
 
   .navmenu li a {
