@@ -104,7 +104,7 @@
 
   .arial-logo {
     position: absolute;
-    top: auto;
+    top: 5px;
     left: 20px;
 
     /* filter: brightness(0) invert(1); */
@@ -127,6 +127,7 @@
     left: 90px;
     width: 100%;
     background: none;
+    height: 100%;
   }
 
   .navmenu li a {
@@ -168,7 +169,7 @@
 
 @media screen and (min-width: 1024px) {
   .arial-logo {
-    top: auto;
+    top: -9px;
     left: 20px;
     width: 60px;
     height: 60px;
@@ -196,7 +197,7 @@
 
 @media screen and (min-width: 1440px) {
   .arial-logo {
-    top: auto;
+    top: 0;
     left: 50px;
     width: 50px;
     height: 50px;
