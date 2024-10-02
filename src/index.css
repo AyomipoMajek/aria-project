@@ -31,3 +31,17 @@ h5,
 h6 {
   font-family: 'DM Sans', sans-serif;
 }
+
+.desktop {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .desktop {
+    display: block;
+  }
+
+  .mobile {
+    display: none;
+  }
+}

@@ -54,59 +54,65 @@ const Navbar = () => {
 
   return (
     <div className={`navbar ${click ? 'active' : ''} ${scrollNav ? 'scroll' : ''}`}>
-      <Link to="/">
-        <img
-          className="arial-logo"
-          src={arialLogo}
-          alt="arial logo"
-          style={{
-            filter: getLogoFilter(),
-          }}
-        />
-      </Link>
-      <div
-        className="menu-icon"
-        role="button"
-        onClick={handleClick}
-        onKeyDown={handleKeyDown}
-        tabIndex={0}
-        aria-label={click ? 'Close menu' : 'Open menu'}
-      >
-        {click ? (
-          <FaTimes
-            className="hamicon"
+      <div className="wrapper">
+        <Link to="/">
+          <img
+            className="arial-logo"
+            src={arialLogo}
+            alt="arial logo"
             style={{
-              color: '#000',
+              filter: getLogoFilter(),
             }}
           />
-        ) : (
-          <FaBars
-            className="hamicon"
-            style={{
-              color: getIconAndItemColor(),
-            }}
-          />
-        )}
-      </div>
-      <ul className={`navmenu ${click ? 'active' : ''}`} style={{ color: getIconAndItemColor() }}>
-        <li className="border" />
-        <li className="each">
-          <Link to="/" style={{ color: getIconAndItemColor(), borderColor: getIconAndItemColor() }}>Home</Link>
-        </li>
-        <li className="border" />
-        <li className="each">
-          <Link to="/about" style={{ color: getIconAndItemColor(), borderColor: getIconAndItemColor() }}>About</Link>
-        </li>
-        <li className="border" />
-        <li className="each">
-          <Link to="/contact" style={{ color: getIconAndItemColor(), borderColor: getIconAndItemColor() }}>Contact</Link>
-        </li>
-        <li className="border" />
-        <button className="get-button" type="button" style={{ color: getIconAndItemColor(), borderColor: getIconAndItemColor() }}>
+        </Link>
+        <div
+          className="menu-icon"
+          role="button"
+          onClick={handleClick}
+          onKeyDown={handleKeyDown}
+          tabIndex={0}
+          aria-label={click ? 'Close menu' : 'Open menu'}
+        >
+          {click ? (
+            <FaTimes
+              className="hamicon"
+              style={{
+                color: '#000',
+              }}
+            />
+          ) : (
+            <FaBars
+              className="hamicon"
+              style={{
+                color: getIconAndItemColor(),
+              }}
+            />
+          )}
+        </div>
+        <ul className={`navmenu ${click ? 'active' : ''}`} style={{ color: getIconAndItemColor() }}>
+          <li className="border" />
+          <li className="each">
+            <Link to="/" style={{ color: getIconAndItemColor(), borderColor: getIconAndItemColor() }}>Home</Link>
+          </li>
+          <li className="border" />
+          <li className="each">
+            <Link to="/about" style={{ color: getIconAndItemColor(), borderColor: getIconAndItemColor() }}>About</Link>
+          </li>
+          <li className="border" />
+          <li className="each">
+            <Link to="/contact" style={{ color: getIconAndItemColor(), borderColor: getIconAndItemColor() }}>Contact</Link>
+          </li>
+          <li className="border" />
+          <button className="get-button mobile" type="button" style={{ color: getIconAndItemColor(), borderColor: getIconAndItemColor() }}>
+            Get in touch
+            <FontAwesomeIcon className="rightarrow" icon={faArrowRight} />
+          </button>
+        </ul>
+        <button className="get-button desktop" type="button" style={{ color: getIconAndItemColor(), borderColor: getIconAndItemColor() }}>
           Get in touch
           <FontAwesomeIcon className="rightarrow" icon={faArrowRight} />
         </button>
-      </ul>
+      </div>
     </div>
   );
 };
