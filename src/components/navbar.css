@@ -81,7 +81,7 @@
 
 .get-button {
   background-color: #000;
-  color: #fff !important;
+  color: #fff;
   border: none;
   padding: 18px 5.5rem;
   margin: 48px 18px;
@@ -90,6 +90,10 @@
   cursor: pointer;
   border-top-right-radius: 8px;
   border-bottom-left-radius: 8px;
+}
+
+.get-button.mobile {
+  color: #fff !important;
 }
 
 .rightarrow {
