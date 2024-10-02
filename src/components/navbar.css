@@ -136,29 +136,6 @@
     padding: 0;
   }
 
-  /* .arial-logo {
-    position: absolute;
-    top: 5px;
-    left: 20px;
-    filter: brightness(0) invert(1);
-  } */
-
-  /* .navbar {
-    height: 9vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .navmenu {
-    top: auto;
-    left: 90px;
-    width: 100%;
-    background: none;
-    height: 100%;
-  } */
-
   .navmenu li a {
     font-size: 12px;
     padding-bottom: 5px;
