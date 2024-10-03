@@ -1,7 +1,28 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 .ourstory {
   padding-top: 8rem;
   padding-left: 10px;
   padding-right: 10px;
+  animation: fadeIn 1.5s ease-in-out;
 }
 
 .ourstory p {
@@ -14,11 +35,13 @@
   padding-bottom: 10px;
   padding-top: 10px;
   color: #808080;
+  animation: slideUp 1.5s ease-in-out;
 }
 
 .who h1 {
   font-size: 22px;
   padding-bottom: 15px;
+  animation: slideUp 1.5s ease-in-out;
 }
 
 /* .who p {
@@ -35,17 +58,20 @@
 .mission h2 {
   font-size: 18px;
   padding-bottom: 15px;
+  animation: slideUp 1.5s ease-in-out;
 }
 
 .mission-image {
   padding: 1.5rem 0;
   width: 100%;
   height: 100%;
+  animation: fadeIn 2s ease-in-out;
 }
 
 .coreValues {
   margin-top: 3rem;
   background: #fafafa;
+  animation: fadeIn 1.5s ease-in-out;
 }
 
 .coreValues h1 {
@@ -60,6 +86,7 @@
   border-radius: 5px;
   margin: 25px 5px;
   padding: 20px;
+  animation: slideUp 1.5s ease-in-out;
 }
 
 .imgh3 {
@@ -80,6 +107,7 @@
   color: #fff;
   background-color: #000;
   padding-bottom: 20px;
+  animation: fadeIn 2s ease-in-out;
 
   /* justify-content: center;
   align-items: center; */
